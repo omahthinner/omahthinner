@@ -203,53 +203,22 @@
 
     .header-content {
       width: 100%;
-      max-width: 100%;
-      padding: 0 clamp(24px, 4vw, 64px);
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 clamp(16px, 2.5vw, 36px);
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 88px;
-      gap: 20px;
-    }
-
-    .header-brand-group {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      flex-shrink: 0;
-    }
-
-    .header-location-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 7px 15px;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 999px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: #CBD5E1;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      letter-spacing: 0.01em;
-    }
-
-    .header-live-pulse {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #10B981;
-      box-shadow: 0 0 10px #10B981;
-      animation: pulseGlow 2s infinite;
-      display: inline-block;
+      height: 80px;
+      gap: 16px;
     }
 
     .brand-logo {
       display: flex;
       align-items: center;
-      gap: 16px;
+      gap: 12px;
       text-decoration: none;
+      flex-shrink: 0;
       transition: transform 0.2s ease;
     }
 
@@ -258,51 +227,51 @@
     }
 
     .brand-logo img {
-      width: 54px;
-      height: 54px;
-      border-radius: 14px;
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
       object-fit: cover;
       border: 2px solid rgba(242, 90, 5, 0.55);
-      box-shadow: 0 4px 18px var(--primary-glow);
+      box-shadow: 0 4px 14px var(--primary-glow);
     }
 
     .brand-text-name {
-      font-size: 1.32rem;
+      font-size: 1.16rem;
       font-weight: 800;
       letter-spacing: -0.015em;
       color: #FFFFFF;
       display: block;
-      line-height: 1.15;
+      line-height: 1.2;
+      white-space: nowrap;
     }
 
     .brand-text-slogan {
-      font-size: 0.84rem;
+      font-size: 0.76rem;
       font-weight: 600;
       color: var(--primary);
-      letter-spacing: 0.025em;
+      letter-spacing: 0.02em;
       display: block;
-      margin-top: 3px;
+      margin-top: 2px;
+      white-space: nowrap;
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 32px;
+      gap: clamp(10px, 1.8vw, 24px);
       list-style: none;
     }
 
     .nav-link {
       color: #94A3B8;
       text-decoration: none;
-      font-size: 1rem;
+      font-size: 0.94rem;
       font-weight: 600;
       transition: all 0.25s ease;
       position: relative;
-      padding: 8px 16px;
-      border-radius: 10px;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 8px;
+      white-space: nowrap;
     }
 
     .nav-link:hover {
@@ -312,8 +281,8 @@
 
     .nav-link.active {
       color: #FFFFFF;
-      background: rgba(242, 90, 5, 0.12);
-      border: 1px solid rgba(242, 90, 5, 0.3);
+      background: rgba(242, 90, 5, 0.14);
+      border: 1px solid rgba(242, 90, 5, 0.35);
     }
 
     .nav-link::after {
@@ -330,15 +299,16 @@
     .header-google-badge {
       display: inline-flex;
       align-items: center;
-      gap: 7px;
-      padding: 8px 14px;
+      gap: 6px;
+      padding: 6px 12px;
       border-radius: 10px;
       text-decoration: none;
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       font-weight: 700;
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid rgba(255, 255, 255, 0.12);
       color: #FFFFFF;
+      white-space: nowrap;
       transition: all 0.25s ease;
     }
 
@@ -350,18 +320,25 @@
 
     .header-google-badge i {
       color: #4285F4;
-      font-size: 1.05rem;
+      font-size: 1rem;
     }
 
     .header-google-badge .rating-stars {
       color: #FBBC05;
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       letter-spacing: 1px;
     }
 
     .header-google-badge .rating-num {
       color: #CBD5E1;
       font-size: 0.78rem;
+    }
+
+    .btn-wa {
+      white-space: nowrap;
+      flex-shrink: 0;
+      padding: 10px 18px;
+      font-size: 0.92rem;
     }
 
     .header-social-pills {
@@ -2610,21 +2587,9 @@
     }
 
     /* Media Queries */
-    @media (max-width: 1320px) {
-      .header-location-badge {
-        display: none;
-      }
-      .header-social-pills {
-        display: none;
-      }
-    }
-
-    @media (max-width: 1120px) {
+    @media (max-width: 1240px) {
       .header-google-badge {
-        display: none;
-      }
-      .nav-links {
-        gap: 20px;
+        display: none !important;
       }
     }
 
@@ -2633,11 +2598,17 @@
         padding: 0 24px;
       }
       .header-content {
-        height: 80px;
-        padding: 0 24px;
+        height: 74px;
+        padding: 0 20px;
       }
       .mobile-drawer {
-        top: 80px;
+        top: 74px;
+      }
+      .nav-links, .nav-actions .btn-wa {
+        display: none !important;
+      }
+      .mobile-menu-btn {
+        display: block !important;
       }
       .hero-header-grid, .about-grid, .contact-grid {
         grid-template-columns: 1fr;
@@ -2825,30 +2796,24 @@
 </head>
 <body>
 
-  <!-- ==================== HEADER & NAVBAR (FULL WIDTH & PRESISI TINGGI) ==================== -->
+  <!-- ==================== HEADER & NAVBAR (PRESISI & ANTI-TERPOTONG) ==================== -->
   <header class="header">
     <div class="header-content">
-      <div class="header-brand-group">
-        <a href="#beranda" class="brand-logo" aria-label="Toko Omah Thinner & Cat Beranda">
-          <img src="img/logo-official.jpg" alt="Logo Omah Thinner & Cat" width="54" height="54">
-          <div>
-            <span class="brand-text-name">TOKO OMAH THINNER & CAT</span>
-            <span class="brand-text-slogan">Solusi hemat untuk hasil yang berkualitas</span>
-          </div>
-        </a>
-        <div class="header-location-badge">
-          <span class="header-live-pulse"></span>
-          <span>Buka • Krajan, Suruh</span>
+      <a href="#beranda" class="brand-logo" aria-label="Toko Omah Thinner & Cat Beranda">
+        <img src="img/logo-official.jpg" alt="Logo Omah Thinner & Cat" width="46" height="46">
+        <div>
+          <span class="brand-text-name">TOKO OMAH THINNER & CAT</span>
+          <span class="brand-text-slogan">Solusi hemat untuk hasil yang berkualitas</span>
         </div>
-      </div>
+      </a>
 
       <!-- 4 MENU ITEMS: Beranda, Etalase Produk, Tentang Kami, Hubungi Kami -->
       <nav class="header-nav" aria-label="Navigasi Utama">
         <ul class="nav-links">
-          <li><a href="#beranda" class="nav-link active"><i class="ri-home-4-line"></i> Beranda</a></li>
-          <li><a href="#etalase" class="nav-link"><i class="ri-store-2-line"></i> Etalase Produk</a></li>
-          <li><a href="#tentang" class="nav-link"><i class="ri-information-line"></i> Tentang Kami</a></li>
-          <li><a href="#kontak" class="nav-link"><i class="ri-customer-service-2-line"></i> Hubungi Kami</a></li>
+          <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+          <li><a href="#etalase" class="nav-link">Etalase Produk</a></li>
+          <li><a href="#tentang" class="nav-link">Tentang Kami</a></li>
+          <li><a href="#kontak" class="nav-link">Hubungi Kami</a></li>
         </ul>
       </nav>
 
@@ -2856,19 +2821,8 @@
         <a href="https://g.page/r/CfASyIPX2_4cEBM/review" target="_blank" rel="noopener noreferrer" class="header-google-badge" title="Lihat Ulasan di Google Maps">
           <i class="ri-google-fill"></i>
           <span class="rating-stars">★★★★★</span>
-          <span class="rating-num">5.0 Ulasan</span>
+          <span class="rating-num">5.0</span>
         </a>
-        <div class="header-social-pills">
-          <a href="https://www.tiktok.com/@omahthinner" target="_blank" rel="noopener noreferrer" class="header-social-pill" title="TikTok Resmi @omahthinner" aria-label="TikTok Toko Omah Thinner & Cat">
-            <i class="ri-tiktok-fill"></i>
-          </a>
-          <a href="https://instagram.com/omahthinner?exln=MXd4bXczMXU1andkNg%3D%3D" target="_blank" rel="noopener noreferrer" class="header-social-pill" title="Instagram Resmi" aria-label="Instagram">
-            <i class="ri-instagram-line"></i>
-          </a>
-          <a href="https://www.facebook.com/share/1DoL1qKmyH/" target="_blank" rel="noopener noreferrer" class="header-social-pill" title="Facebook Resmi" aria-label="Facebook">
-            <i class="ri-facebook-circle-fill"></i>
-          </a>
-        </div>
         <a href="https://wa.me/6283185791919?text=Halo%20Omah%20Thinner%20%26%20Cat,%20saya%20ingin%20tanya%20produk%20dan%20harga" target="_blank" class="btn btn-wa">
           <i class="ri-whatsapp-line"></i> Chat WhatsApp
         </a>
