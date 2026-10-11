@@ -408,7 +408,7 @@
       "category_name": "Thinner",
       "brand_name": "Dms",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_thinner_dms_hg.jpg",
       "active": true,
       "variants": [
         {
@@ -1205,7 +1205,7 @@
       "category_name": "Thinner",
       "brand_name": "Polibest",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_thinner_polibest_puxm.jpg",
       "active": true,
       "variants": [
         {
@@ -1242,7 +1242,7 @@
       "category_name": "Amplas",
       "brand_name": "RMC",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_amplas_rmc_waterproof.jpg",
       "active": true,
       "variants": [
         {
@@ -1279,7 +1279,7 @@
       "category_name": "Amplas",
       "brand_name": "Dms",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_amplas_rmc_waterproof.jpg",
       "active": true,
       "variants": [
         {
@@ -1931,7 +1931,7 @@
       "category_name": "Sealer",
       "brand_name": "Dms",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_sealer_silicon_dms.svg",
       "active": true,
       "variants": [
         {
@@ -1969,7 +1969,7 @@
       "category_name": "Sealer",
       "brand_name": "Dms",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_sealer_pu_dms.svg",
       "active": true,
       "variants": [
         {
@@ -2274,7 +2274,7 @@
       "category_name": "Coumpond",
       "brand_name": "Tanuri",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_tanuri_731801.webp",
       "active": true,
       "variants": [
         {
@@ -2311,7 +2311,7 @@
       "category_name": "Coumpond",
       "brand_name": "Ivory",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_rubbing_compound_ivory.jpg",
       "active": true,
       "variants": [
         {
@@ -2348,7 +2348,7 @@
       "category_name": "Coumpond",
       "brand_name": "Alfagloss",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_rubbing_tube_alfa.jpg",
       "active": true,
       "variants": [
         {
@@ -2386,7 +2386,7 @@
       "category_name": "Coumpond",
       "brand_name": "Dumons",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_rubbing_compound_ivory.jpg",
       "active": true,
       "variants": [
         {
@@ -2424,7 +2424,7 @@
       "category_name": "Zinc Chromate/ Meni",
       "brand_name": "Dumons",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_cat_abu_abu_049145.jpg",
       "active": true,
       "variants": [
         {
@@ -2483,7 +2483,7 @@
       "category_name": "PP Primer",
       "brand_name": "Dumons",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_epoxy_primer_surfacer_466115.jpg",
       "active": true,
       "variants": [
         {
@@ -2636,7 +2636,7 @@
       "category_name": "Obat Doff",
       "brand_name": "Dumons",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_clear_doff_787608.jpg",
       "active": true,
       "variants": [
         {
@@ -2676,7 +2676,7 @@
       "category_name": "Hammertone",
       "brand_name": "Polibest",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_cat_abu_abu_049145.jpg",
       "active": true,
       "variants": [
         {
@@ -2735,7 +2735,7 @@
       "category_name": "Flinkote",
       "brand_name": "Polibest",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_flinkote_polibest.svg",
       "active": true,
       "variants": [
         {
@@ -2769,7 +2769,7 @@
       "category_name": "Kuas",
       "brand_name": "Eterna",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_kuas_eterna.svg",
       "active": true,
       "variants": [
         {
@@ -2853,7 +2853,7 @@
       "category_name": "Dempul",
       "brand_name": "Camel",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_kape_dempul.svg",
       "active": true,
       "variants": [
         {
@@ -2978,7 +2978,7 @@
       "category_name": "Coumpond",
       "brand_name": "Standar Toko",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_busa_kain_poles.svg",
       "active": true,
       "variants": [
         {
@@ -3081,7 +3081,7 @@
       "category_name": "Koran",
       "brand_name": "Standar Toko",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_koran_masking.svg",
       "active": true,
       "variants": [
         {
@@ -3140,7 +3140,7 @@
       "category_name": "Cat",
       "brand_name": "Dumons",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_cat_dumons_metalic_134080.jpg",
       "active": true,
       "variants": [
         {
@@ -3389,7 +3389,7 @@
       "category_name": "Dempul",
       "brand_name": "Nashua",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_solasi_kertas_nashua.svg",
       "active": true,
       "variants": [
         {
@@ -4100,7 +4100,7 @@
       "category_name": "Remover",
       "brand_name": "Polibest",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_paint_remover_polibest.svg",
       "active": true,
       "variants": [
         {
@@ -4274,7 +4274,7 @@
       "category_name": "Kaleng",
       "brand_name": "Standar Toko",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_kaleng_kosong.svg",
       "active": true,
       "variants": [
         {
@@ -4374,7 +4374,7 @@
       "category_name": "clear/pernish",
       "brand_name": "Alfagloss",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_premium_clear_795901.jpg",
       "active": true,
       "variants": [
         {
@@ -4470,7 +4470,7 @@
       "category_name": "Lembayung",
       "brand_name": "Dumons",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_cat_pink_475273.jpg",
       "active": true,
       "variants": [
         {
@@ -4508,7 +4508,7 @@
       "category_name": "Amplas",
       "brand_name": "Standar Toko",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_amplas_gerinda_flapdisc.jpg",
       "active": true,
       "variants": [
         {
@@ -4722,7 +4722,7 @@
       "category_name": "Thinner",
       "brand_name": "Monster Thinner",
       "description": "",
-      "image": "",
+      "image": "uploads/prod_monster_thinner_109s.jpg",
       "active": true,
       "variants": [
         {

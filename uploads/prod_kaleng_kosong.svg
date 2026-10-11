@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <radialGradient id="bgCan" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </radialGradient>
+    <linearGradient id="silverPlate" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="20%" stop-color="#f1f5f9"/>
+      <stop offset="45%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#cbd5e1"/>
+      <stop offset="90%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <filter id="shadowCan" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#0f172a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" rx="24" fill="url(#bgCan)"/>
+
+  <!-- Kaleng Baru Mengkilap -->
+  <g filter="url(#shadowCan)" transform="translate(160, 110)">
+    <!-- Badan Kaleng -->
+    <rect x="30" y="80" width="220" height="280" rx="14" fill="url(#silverPlate)"/>
+    <!-- Bibir Atas Kaleng -->
+    <ellipse cx="140" cy="80" rx="110" ry="28" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+    <!-- Tutup Kaleng Dalam -->
+    <ellipse cx="140" cy="74" rx="85" ry="20" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+    <ellipse cx="140" cy="74" rx="65" ry="14" fill="#cbd5e1"/>
+
+    <!-- Lingkar Bawah Kaleng -->
+    <ellipse cx="140" cy="360" rx="110" ry="28" fill="#475569"/>
+
+    <!-- Emboss Garis Kaleng -->
+    <line x1="30" y1="140" x2="250" y2="140" stroke="#f8fafc" stroke-width="3" opacity="0.8"/>
+    <line x1="30" y1="300" x2="250" y2="300" stroke="#f8fafc" stroke-width="3" opacity="0.8"/>
+
+    <!-- Badge Info Ukuran -->
+    <rect x="70" y="180" width="140" height="80" rx="10" fill="#1e293b" opacity="0.85"/>
+    <text x="140" y="215" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="24" fill="#ffffff" text-anchor="middle">KALENG 1/4</text>
+    <text x="140" y="240" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="700" font-size="11" fill="#38bdf8" text-anchor="middle">WADAH OPLOS CAT</text>
+  </g>
+
+  <!-- Tag Label -->
+  <rect x="36" y="36" width="180" height="34" rx="8" fill="#0f172a" opacity="0.9"/>
+  <text x="126" y="58" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="13" fill="#64748b" text-anchor="middle">KALENG OPLOS CAT 1/4</text>
+</svg>

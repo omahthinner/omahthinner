@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <radialGradient id="bgPaper" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </radialGradient>
+    <filter id="shadowPaper" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" rx="24" fill="url(#bgPaper)"/>
+
+  <!-- Tumpukan Kertas Koran Pembungkus Cat -->
+  <g filter="url(#shadowPaper)" transform="translate(100, 110)">
+    <!-- Lembaran Bawah -->
+    <rect x="30" y="70" width="360" height="260" rx="8" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5" transform="rotate(-6 210 200)"/>
+    <!-- Lembaran Utama Koran Bersih -->
+    <rect x="40" y="60" width="350" height="260" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2" transform="rotate(4 210 190)"/>
+
+    <g transform="rotate(4 210 190)">
+      <!-- Header Koran Masking -->
+      <line x1="60" y1="90" x2="370" y2="90" stroke="#334155" stroke-width="3"/>
+      <text x="215" y="115" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="20" fill="#0f172a" text-anchor="middle" letter-spacing="2">KERTAS MASKING PENGECATAN</text>
+      <line x1="60" y1="125" x2="370" y2="125" stroke="#334155" stroke-width="1.5"/>
+
+      <!-- Baris Teks Berita / Kolom Koran -->
+      <rect x="65" y="140" width="85" height="150" fill="#cbd5e1" opacity="0.3"/>
+      <rect x="170" y="140" width="85" height="150" fill="#cbd5e1" opacity="0.3"/>
+      <rect x="275" y="140" width="85" height="150" fill="#cbd5e1" opacity="0.3"/>
+
+      <!-- Solasi Kertas Menempel di Sudut -->
+      <rect x="280" y="50" width="90" height="24" fill="#fef08a" stroke="#ca8a04" stroke-width="1" transform="rotate(-20 320 60)"/>
+    </g>
+  </g>
+
+  <!-- Tag Label -->
+  <rect x="36" y="36" width="180" height="34" rx="8" fill="#0f172a" opacity="0.9"/>
+  <text x="126" y="58" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="13" fill="#64748b" text-anchor="middle">KORAN MASKING CAT</text>
+</svg>
