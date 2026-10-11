@@ -112,12 +112,12 @@
   "products": [
     {
       "id": "prod_1787955077175",
-      "name": "Alfa gloss",
+      "name": "Alfaglos Polyester Putty (Dempul)",
       "category_id": "cat_1787955008877",
       "category_name": "Dempul",
       "brand_name": "Alfagloss",
-      "description": "",
-      "image": "uploads/prod_alfa_gloss_077175.jpg",
+      "description": "Dempul polyester 2-komponen berkualitas tinggi dari Alfaglos, dilengkapi pasta hardener. Berdaya rekat istimewa, cepat kering, dan sangat mudah diamplas halus untuk meratakan bodi mobil dan motor.",
+      "image": "uploads/official/alfaglos_putty_photo.jpg",
       "active": true,
       "variants": [
         {
@@ -198,7 +198,8 @@
       ],
       "min_price": 22000.0,
       "max_price": 125000.0,
-      "total_stock": 36.0
+      "total_stock": 36.0,
+      "brand": "Alfaglos"
     },
     {
       "id": "prod_1787958015030",
@@ -363,12 +364,12 @@
     },
     {
       "id": "prod_1788575454711",
-      "name": "Clear S1",
+      "name": "Dumons Clear Coat S1 (4:1)",
       "category_id": "cat_1788748113660",
       "category_name": "clear/pernish",
       "brand_name": "Dumons",
-      "description": "",
-      "image": "uploads/prod_clear_s1_454711.jpg",
+      "description": "Clear coat Polyurethane 2K perbandingan 4:1 dari Dumons Coating. Menghasilkan lapisan film tebal, kilap basah (wet look) prima, dan cepat kering.",
+      "image": "uploads/official/dumons_s1.png",
       "active": true,
       "variants": [
         {
@@ -399,7 +400,8 @@
       ],
       "min_price": 170000.0,
       "max_price": 170000.0,
-      "total_stock": 1.0
+      "total_stock": 1.0,
+      "brand": "Dumons"
     },
     {
       "id": "prod_1788587872816",
@@ -484,12 +486,12 @@
     },
     {
       "id": "prod_1788595678688",
-      "name": "Epoxy Filler",
+      "name": "Dumons 2K Epoxy Filler",
       "category_id": "cat_1788749443068",
       "category_name": "Epoxy",
       "brand_name": "Dumons",
-      "description": "",
-      "image": "uploads/prod_epoxy_filler_678688.jpg",
+      "description": "Epoxy filler 2 komponen Dumons dengan perlindungan anti-korosi superior. Tersedia varian warna Grey, Hitam, dan Putih.",
+      "image": "uploads/official/dumons_epoxy_filler.png",
       "active": true,
       "variants": [
         {
@@ -570,16 +572,17 @@
       ],
       "min_price": 85000.0,
       "max_price": 85000.0,
-      "total_stock": 20.0
+      "total_stock": 20.0,
+      "brand": "Dumons"
     },
     {
       "id": "prod_1788748731801",
-      "name": "Tanuri",
+      "name": "Tanuri Polyester Putty (Dempul)",
       "category_id": "cat_1787955008877",
       "category_name": "Dempul",
       "brand_name": "Tanuri",
-      "description": "",
-      "image": "uploads/prod_tanuri_731801.webp",
+      "description": "Dempul bodi andalan bengkel dari Tanuri Group. Formula lentur, mudah ditarik kape, cepat kering, dan sangat padat mengisi lekukan plat.",
+      "image": "uploads/official/tanuri_dempul.jpg",
       "active": true,
       "variants": [
         {
@@ -629,7 +632,8 @@
       ],
       "min_price": 50000.0,
       "max_price": 128000.0,
-      "total_stock": 29.0
+      "total_stock": 29.0,
+      "brand": "Tanuri"
     },
     {
       "id": "prod_1788748810719",
@@ -744,12 +748,12 @@
     },
     {
       "id": "prod_1788842541713",
-      "name": "Cat Dumons Kg (Std)",
+      "name": "Cat Dumons Kg (NC Solid Standard)",
       "category_id": "cat_1788748806953",
       "category_name": "Cat",
       "brand_name": "Dumons",
-      "description": "",
-      "image": "uploads/prod_cat_dumons_kg__std__541713.jpg",
+      "description": "Cat Nitrocellulose (NC) solid kemasan 1 kg dari Dumons. Daya tutup cepat, warna pekat tahan pudar untuk bodi kendaraan dan industri.",
+      "image": "uploads/official/dumons_cat_nc_solid.png",
       "active": true,
       "variants": [
         {
@@ -905,16 +909,17 @@
       ],
       "min_price": 100000.0,
       "max_price": 110000.0,
-      "total_stock": 31.0
+      "total_stock": 31.0,
+      "brand": "Dumons"
     },
     {
       "id": "prod_1788861273437",
-      "name": "Cat Dumons 1/4 (Std)",
+      "name": "Cat Dumons 1/4 (NC Solid Standard)",
       "category_id": "cat_1788748806953",
       "category_name": "Cat",
       "brand_name": "Dumons",
-      "description": "",
-      "image": "uploads/prod_cat_dumons_1_4__std__273437.jpg",
+      "description": "Cat NC solid Dumons kemasan ekonomis 1/4 kg (250 gr). Praktis untuk perbaikan bagian panel kecil atau motor.",
+      "image": "uploads/official/dumons_cat_nc_solid.png",
       "active": true,
       "variants": [
         {
@@ -1012,16 +1017,17 @@
       ],
       "min_price": 30000.0,
       "max_price": 30000.0,
-      "total_stock": 74.0
+      "total_stock": 74.0,
+      "brand": "Dumons"
     },
     {
       "id": "prod_1788861532797",
-      "name": "Cat Dumons Galon (Std)",
+      "name": "Cat Dumons Galon (NC Solid Standard)",
       "category_id": "cat_1788748806953",
       "category_name": "Cat",
       "brand_name": "Dumons",
-      "description": "",
-      "image": "uploads/prod_cat_dumons_galon__std__532797.jpg",
+      "description": "Cat NC solid Dumons kemasan galon besar untuk kebutuhan bengkel cat profesional dan pengecatan seluruh bodi.",
+      "image": "uploads/official/dumons_cat_nc_solid.png",
       "active": true,
       "variants": [
         {
@@ -1121,16 +1127,17 @@
       ],
       "min_price": 525000.0,
       "max_price": 525000.0,
-      "total_stock": 0.0
+      "total_stock": 0.0,
+      "brand": "Dumons"
     },
     {
       "id": "prod_1788862189507",
-      "name": "Dempul Max",
+      "name": "Alfaglos MAX Polyester Putty",
       "category_id": "cat_1787955008877",
       "category_name": "Dempul",
       "brand_name": "Alfagloss",
-      "description": "",
-      "image": "uploads/prod_dempul_max_189507.jpg",
+      "description": "Dempul Alfaglos MAX kemasan galon untuk proyek bodi perbaikan skala besar. Tekstur lembut, elastisitas tinggi, tidak mudah retak, dan minim pori-pori.",
+      "image": "uploads/official/alfaglos_max_galon.png",
       "active": true,
       "variants": [
         {
@@ -1159,7 +1166,8 @@
       ],
       "min_price": 103000.0,
       "max_price": 103000.0,
-      "total_stock": 14.0
+      "total_stock": 14.0,
+      "brand": "Alfaglos"
     },
     {
       "id": "prod_1788862228264",
@@ -1311,12 +1319,12 @@
     },
     {
       "id": "prod_1788871655201",
-      "name": "Clear S2",
+      "name": "Dumons Clear Coat S2 (2:1)",
       "category_id": "cat_1788748113660",
       "category_name": "clear/pernish",
       "brand_name": "Dumons",
-      "description": "",
-      "image": "uploads/prod_clear_s2_655201.jpg",
+      "description": "Clear coat High Solid Polyurethane 2K 2:1 dari Dumons Coating. Lapisan pernis ekstra bening dengan ketahanan UV luar biasa dan kilap kaca.",
+      "image": "uploads/official/dumons_s2.png",
       "active": true,
       "variants": [
         {
@@ -1370,16 +1378,17 @@
       ],
       "min_price": 60000.0,
       "max_price": 208000.0,
-      "total_stock": 10.0
+      "total_stock": 10.0,
+      "brand": "Dumons"
     },
     {
       "id": "prod_1788871846341",
-      "name": "Clear 901",
+      "name": "Dumons Clear Coat 901 Fast Dry (4:1)",
       "category_id": "cat_1788748113660",
       "category_name": "clear/pernish",
       "brand_name": "Dumons",
-      "description": "",
-      "image": "uploads/prod_clear_901_846341.jpg",
+      "description": "Pernis cepat kering (Fast Dry) 4:1 Dumons 901. Cocok untuk pengerjaan spot repair dan panel cepat dengan kilau optimal.",
+      "image": "uploads/official/dumons_901.png",
       "active": true,
       "variants": [
         {
@@ -1435,7 +1444,8 @@
       ],
       "min_price": 40000.0,
       "max_price": 145000.0,
-      "total_stock": 10.0
+      "total_stock": 10.0,
+      "brand": "Dumons"
     },
     {
       "id": "prod_1788871941397",
@@ -1599,12 +1609,12 @@
     },
     {
       "id": "prod_1788879213215",
-      "name": "Mel.Clear",
+      "name": "Dumons Melamine Clear Gloss",
       "category_id": "cat_1788878267711",
       "category_name": "Melamine",
       "brand_name": "Dumons",
-      "description": "",
-      "image": "uploads/prod_mel_clear_213215.jpg",
+      "description": "Finishing kayu melamine 2-komponen dari Dumons dengan kilap gloss tinggi, tahan panas, dan tahan goresan untuk furnitur kayu jati/mahoni.",
+      "image": "uploads/official/dumons_melamine_clear_gloss.png",
       "active": true,
       "variants": [
         {
@@ -1683,16 +1693,17 @@
       ],
       "min_price": 75000.0,
       "max_price": 310000.0,
-      "total_stock": 10.0
+      "total_stock": 10.0,
+      "brand": "Dumons"
     },
     {
       "id": "prod_1788879368993",
-      "name": "Mel. Sending",
+      "name": "Dumons Melamine Sanding Sealer",
       "category_id": "cat_1788878267711",
       "category_name": "Melamine",
       "brand_name": "Dumons",
-      "description": "",
-      "image": "uploads/prod_mel__sending_368993.jpg",
+      "description": "Dasaran melamine transparan dari Dumons untuk menutup pori-pori serat kayu. Mudah diamplas halus sebelum lapisan topcoat melamine clear.",
+      "image": "uploads/official/dumons_melamine_sanding_sealer.png",
       "active": true,
       "variants": [
         {
@@ -1746,16 +1757,17 @@
       ],
       "min_price": 70000.0,
       "max_price": 285000.0,
-      "total_stock": 8.0
+      "total_stock": 8.0,
+      "brand": "Dumons"
     },
     {
       "id": "prod_1788879481180",
-      "name": "Wood Filler",
+      "name": "Dumons Wood Filler",
       "category_id": "cat_1788878267711",
       "category_name": "Melamine",
       "brand_name": "Dumons",
-      "description": "",
-      "image": "uploads/prod_wood_filler_481180.jpg",
+      "description": "Dempul kayu khusus mebel dari Dumons. Mengisi pori dan cacat kayu dengan sempurna, tidak menyusut, dan menyatu alami dengan serat kayu.",
+      "image": "uploads/official/dumons_wood_filler.png",
       "active": true,
       "variants": [
         {
@@ -1807,16 +1819,17 @@
       ],
       "min_price": 13000.0,
       "max_price": 50000.0,
-      "total_stock": 6.0
+      "total_stock": 6.0,
+      "brand": "Dumons"
     },
     {
       "id": "prod_1788879677670",
-      "name": "Wood Stain",
+      "name": "Dumons Wood Stain",
       "category_id": "cat_1788878267711",
       "category_name": "Melamine",
       "brand_name": "Dumons",
-      "description": "",
-      "image": "uploads/prod_wood_stain_677670.jpg",
+      "description": "Pewarna kayu transparan dari Dumons yang mempertegas keindahan serat alami kayu. Tersedia pilihan warna Cocoa Brown, Walnut, Salak, Candy Brown.",
+      "image": "uploads/official/dumons_wood_stain.png",
       "active": true,
       "variants": [
         {
@@ -1922,7 +1935,8 @@
       ],
       "min_price": 75000.0,
       "max_price": 75000.0,
-      "total_stock": 12.0
+      "total_stock": 12.0,
+      "brand": "Dumons"
     },
     {
       "id": "prod_1788879846823",
@@ -2021,12 +2035,12 @@
     },
     {
       "id": "prod_1788880466115",
-      "name": "Epoxy Primer Surfacer",
+      "name": "Dumons Epoxy Primer Surfacer 2K",
       "category_id": "cat_1788749443068",
       "category_name": "Epoxy",
       "brand_name": "Dumons",
-      "description": "",
-      "image": "uploads/prod_epoxy_primer_surfacer_466115.jpg",
+      "description": "Primer surfacer epoxy 2K serbaguna Dumons untuk mengunci plat besi dan dempul agar cat finish menempel sempurna tanpa gelembung.",
+      "image": "uploads/official/dumons_epoxy_primer_surfacer.png",
       "active": true,
       "variants": [
         {
@@ -2080,16 +2094,17 @@
       ],
       "min_price": 35000.0,
       "max_price": 105000.0,
-      "total_stock": 21.0
+      "total_stock": 21.0,
+      "brand": "Dumons"
     },
     {
       "id": "prod_1788880750282",
-      "name": "2k Pu Surfacer",
+      "name": "Dumons 2K PU Surfacer",
       "category_id": "cat_1788749443068",
       "category_name": "Epoxy",
       "brand_name": "Dumons",
-      "description": "",
-      "image": "uploads/prod_2k_pu_surfacer_750282.jpg",
+      "description": "Polyurethane Surfacer 2K Dumons berdaya isi tinggi, mudah diamplas basah maupun kering, menghasilkan permukaan super rata.",
+      "image": "uploads/official/dumons_surfacer_pu_2k.png",
       "active": true,
       "variants": [
         {
@@ -2145,16 +2160,17 @@
       ],
       "min_price": 30000.0,
       "max_price": 90000.0,
-      "total_stock": 14.0
+      "total_stock": 14.0,
+      "brand": "Dumons"
     },
     {
       "id": "prod_1788881041427",
-      "name": "Epoxy Filler Alfa",
+      "name": "Alfaglos MAX 2K Epoxy Filler",
       "category_id": "cat_1788749443068",
       "category_name": "Epoxy",
       "brand_name": "Alfagloss",
-      "description": "",
-      "image": "uploads/prod_epoxy_filler_alfa_041427.jpg",
+      "description": "Primer filler epoxy 2-komponen dari Alfaglos dengan daya tutup tinggi dan perlindungan anti-karat prima. Menutup goresan amplas dan pori dempul secara sempurna.",
+      "image": "uploads/official/alfaglos_max_2k_epoxy.png",
       "active": true,
       "variants": [
         {
@@ -2206,16 +2222,17 @@
       ],
       "min_price": 38000.0,
       "max_price": 95000.0,
-      "total_stock": 6.0
+      "total_stock": 6.0,
+      "brand": "Alfaglos"
     },
     {
       "id": "prod_1788881498315",
-      "name": "HIT 2K Pu Filler",
+      "name": "HIT 2K PU Filler (Tanuri)",
       "category_id": "cat_1788749443068",
       "category_name": "Epoxy",
       "brand_name": "Tanuri",
-      "description": "",
-      "image": "uploads/prod_hit_2k_pu_filler_498315.jpg",
+      "description": "Cat dasar 2K Polyurethane Surfacer / Filler dari Tanuri Group dengan ketebalan film tinggi, mengisolasi permukaan dempul dari resiko cat belang.",
+      "image": "uploads/official/tanuri_hit_filler.jpg",
       "active": true,
       "variants": [
         {
@@ -2265,16 +2282,17 @@
       ],
       "min_price": 33000.0,
       "max_price": 93000.0,
-      "total_stock": 0.0
+      "total_stock": 0.0,
+      "brand": "Tanuri"
     },
     {
       "id": "prod_1788881611332",
-      "name": "Tanuri Eco",
+      "name": "Tanuri Eco Compound",
       "category_id": "cat_1788881551106",
       "category_name": "Coumpond",
       "brand_name": "Tanuri",
-      "description": "",
-      "image": "uploads/prod_tanuri_731801.webp",
+      "description": "Rubbing compound Tanuri Eco untuk proses pemolesan bodi mobil dan motor. Cepat mengangkat kulit jeruk cat dan memberikan hasil kilau halus merata.",
+      "image": "uploads/official/tanuri_compound.jpg",
       "active": true,
       "variants": [
         {
@@ -2302,7 +2320,8 @@
       ],
       "min_price": 130000.0,
       "max_price": 130000.0,
-      "total_stock": 11.0
+      "total_stock": 11.0,
+      "brand": "Tanuri"
     },
     {
       "id": "prod_1788881736111",
@@ -2343,12 +2362,12 @@
     },
     {
       "id": "prod_1788881863404",
-      "name": "Rubing Tube Alfa",
+      "name": "Alfaglos Rubbing Compound Tube",
       "category_id": "cat_1788881551106",
       "category_name": "Coumpond",
       "brand_name": "Alfagloss",
-      "description": "",
-      "image": "uploads/prod_rubbing_tube_alfa.jpg",
+      "description": "Kompon poles pasta dalam kemasan tube praktis dari Alfaglos untuk mengikis baret halus, jamur cat, dan meratakan permukaan cat baru.",
+      "image": "uploads/official/alfaglos_rubbing_photo.jpg",
       "active": true,
       "variants": [
         {
@@ -2377,7 +2396,8 @@
       ],
       "min_price": 10000.0,
       "max_price": 10000.0,
-      "total_stock": 29.0
+      "total_stock": 29.0,
+      "brand": "Alfaglos"
     },
     {
       "id": "prod_1788881974581",
@@ -2419,12 +2439,12 @@
     },
     {
       "id": "prod_1788882292000",
-      "name": "Zinc Chromate/Meni",
+      "name": "Dumons Zinc Chromate Anti-Karat",
       "category_id": "cat_1788882058937",
       "category_name": "Zinc Chromate/ Meni",
       "brand_name": "Dumons",
-      "description": "",
-      "image": "uploads/prod_cat_abu_abu_049145.jpg",
+      "description": "Cat dasar meni anti-karat Dumons dengan pigmen zinc chromate aktif. Mencegah karat timbul kembali pada bodi kendaraan dan rangka besi.",
+      "image": "uploads/official/dumons_zinc_chromate.png",
       "active": true,
       "variants": [
         {
@@ -2474,16 +2494,17 @@
       ],
       "min_price": 50000.0,
       "max_price": 110000.0,
-      "total_stock": 7.0
+      "total_stock": 7.0,
+      "brand": "Dumons"
     },
     {
       "id": "prod_1788882724041",
-      "name": "PP Primer",
+      "name": "Dumons PP Primer (Plastik)",
       "category_id": "cat_1788882513766",
       "category_name": "PP Primer",
       "brand_name": "Dumons",
-      "description": "",
-      "image": "uploads/prod_epoxy_primer_surfacer_466115.jpg",
+      "description": "Primer khusus bahan plastik Polypropylene (PP) dari Dumons. Menjamin cat menempel kuat pada bodi kasar/kulit jeruk motor dan bumper mobil.",
+      "image": "uploads/official/dumons_pp_black_matte.png",
       "active": true,
       "variants": [
         {
@@ -2627,7 +2648,8 @@
       ],
       "min_price": 30000.0,
       "max_price": 100000.0,
-      "total_stock": 12.0
+      "total_stock": 12.0,
+      "brand": "Dumons"
     },
     {
       "id": "prod_1788882796664",
@@ -3135,12 +3157,12 @@
     },
     {
       "id": "prod_1789348436826",
-      "name": "candy Nc",
+      "name": "Dumons Cat Candy PU / NC",
       "category_id": "cat_1788748806953",
       "category_name": "Cat",
       "brand_name": "Dumons",
-      "description": "",
-      "image": "uploads/prod_cat_dumons_metalic_134080.jpg",
+      "description": "Cat transparan warna permen berpigmen cerah dari Dumons. Memberikan kedalaman warna spektakuler bila diaplikasikan di atas dasar silver atau emas.",
+      "image": "uploads/official/dumons_cat_candy_pu.png",
       "active": true,
       "variants": [
         {
@@ -3380,7 +3402,8 @@
       ],
       "min_price": 35000.0,
       "max_price": 115000.0,
-      "total_stock": 18.429
+      "total_stock": 18.429,
+      "brand": "Dumons"
     },
     {
       "id": "prod_1789349452029",
@@ -4057,12 +4080,12 @@
     },
     {
       "id": "prod_1789464795901",
-      "name": "Premium Clear",
+      "name": "Dumons Premium Clear Coat (2:1)",
       "category_id": "cat_1788748113660",
       "category_name": "clear/pernish",
       "brand_name": "Dumons",
-      "description": "",
-      "image": "uploads/prod_premium_clear_795901.jpg",
+      "description": "Clear coat premium kasta tertinggi dari Dumons dengan hardener khusus. Tingkat kilap maksimal, anti-yellowing, dan tahan gores.",
+      "image": "uploads/official/dumons_premium_clear.png",
       "active": true,
       "variants": [
         {
@@ -4091,7 +4114,8 @@
       ],
       "min_price": 300000.0,
       "max_price": 300000.0,
-      "total_stock": 1.0
+      "total_stock": 1.0,
+      "brand": "Dumons"
     },
     {
       "id": "prod_1789537316914",
@@ -4369,12 +4393,12 @@
     },
     {
       "id": "prod_1789716618894",
-      "name": "Pro Choice HS",
+      "name": "Alfaglos Pro Choice 201 Clear Coat HS",
       "category_id": "cat_1788748113660",
       "category_name": "clear/pernish",
       "brand_name": "Alfagloss",
-      "description": "",
-      "image": "uploads/prod_premium_clear_795901.jpg",
+      "description": "Clear coat High Solid (HS) 2:1 dari Alfaglos dengan kilap wet-look tahan lama, tahan cuaca tropis ekstrem dan goresan ringan.",
+      "image": "uploads/official/alfaglos_pro_choice_201.png",
       "active": true,
       "variants": [
         {
@@ -4400,16 +4424,17 @@
       ],
       "min_price": 250000.0,
       "max_price": 250000.0,
-      "total_stock": 3.0
+      "total_stock": 3.0,
+      "brand": "Alfaglos"
     },
     {
       "id": "prod_1790412787608",
-      "name": "Clear doff",
+      "name": "Dumons Clear Doff / Matting Doff",
       "category_id": "cat_1788748113660",
       "category_name": "clear/pernish",
       "brand_name": "Dumons",
-      "description": "",
-      "image": "uploads/prod_clear_doff_787608.jpg",
+      "description": "Clear doff / obat doff dari Dumons untuk menghasilkan tampilan satin doff elegan tanpa mengurangi kekuatan lapisan perlindungan cat.",
+      "image": "uploads/official/dumons_melamine_clear_doff.png",
       "active": true,
       "variants": [
         {
@@ -4461,7 +4486,8 @@
       ],
       "min_price": 40000.0,
       "max_price": 145000.0,
-      "total_stock": 3.0
+      "total_stock": 3.0,
+      "brand": "Dumons"
     },
     {
       "id": "prod_1790492538803",
@@ -4717,12 +4743,12 @@
     },
     {
       "id": "prod_1791103508292",
-      "name": "109S",
+      "name": "Thinner Monster 109S / Dumons 109",
       "category_id": "cat_1787957687285",
       "category_name": "Thinner",
       "brand_name": "Monster Thinner",
-      "description": "",
-      "image": "uploads/prod_monster_thinner_109s.jpg",
+      "description": "Thinner pengencer spesialis cat NC dan PU dari Dumons/Monster. Daya larut sempurna, tidak membuat cat berkabut, dan menghasilkan kilau maksimal.",
+      "image": "uploads/official/dumons_thinner_109.png",
       "active": true,
       "variants": [
         {
@@ -4748,16 +4774,17 @@
       ],
       "min_price": 55000.0,
       "max_price": 55000.0,
-      "total_stock": 3.0
+      "total_stock": 3.0,
+      "brand": "Monster / Dumons"
     },
     {
       "id": "prod_1791645134080",
-      "name": "Cat Dumons Metalic",
+      "name": "Cat Dumons NC Metallic",
       "category_id": "cat_1788748806953",
       "category_name": "Cat",
       "brand_name": "Dumons",
-      "description": "",
-      "image": "uploads/prod_cat_dumons_metalic_134080.jpg",
+      "description": "Cat NC berbutir mutiara & metallic premium dari Dumons. Kilauan partikel aluminium rata dan berkilau mewah di bawah sinar matahari.",
+      "image": "uploads/official/dumons_cat_nc_metallic.png",
       "active": true,
       "variants": [
         {
@@ -4878,7 +4905,8 @@
       ],
       "min_price": 135000.0,
       "max_price": 150000.0,
-      "total_stock": 10.0
+      "total_stock": 10.0,
+      "brand": "Dumons"
     }
   ]
 }
