@@ -371,39 +371,169 @@
 
     .mobile-menu-btn {
       display: none;
-      background: none;
-      border: none;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
       color: #FFFFFF;
-      font-size: 28px;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      align-items: center;
+      justify-content: center;
       cursor: pointer;
+      font-size: 24px;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+      flex-shrink: 0;
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
+      z-index: 102;
     }
 
-    /* Mobile Drawer */
+    .mobile-menu-btn:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(242, 90, 5, 0.5);
+    }
+
+    .mobile-menu-btn:active,
+    .mobile-menu-btn.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #FFFFFF;
+      box-shadow: 0 0 16px var(--primary-glow);
+      transform: scale(0.94);
+    }
+
+    .mobile-menu-btn i {
+      pointer-events: none;
+      display: flex;
+      line-height: 1;
+    }
+
+    /* Mobile Drawer Backdrop Overlay */
+    .drawer-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(4, 7, 13, 0.72);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      z-index: 98;
+    }
+
+    .drawer-overlay.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* Mobile Drawer Side-Sheet */
     .mobile-drawer {
       position: fixed;
-      top: 88px;
-      left: 0;
+      top: 70px;
       right: 0;
+      width: min(340px, 86vw);
       bottom: 0;
-      background: rgba(9, 13, 22, 0.98);
-      backdrop-filter: blur(20px);
-      padding: 32px 24px;
+      background: rgba(10, 15, 26, 0.98);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      border-left: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: -12px 0 40px rgba(0, 0, 0, 0.65);
+      padding: 24px 20px 36px;
       display: flex;
       flex-direction: column;
-      gap: 20px;
-      transform: translateX(100%);
-      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      gap: 16px;
+      transform: translateX(105%);
+      transition: transform 0.32s cubic-bezier(0.32, 0.72, 0, 1);
       z-index: 99;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
     }
 
     .mobile-drawer.open {
       transform: translateX(0);
     }
 
-    .mobile-drawer .nav-link {
-      font-size: 1.25rem;
-      padding: 12px 0;
-      border-bottom: 1px solid var(--border-subtle);
+    .mobile-drawer-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .mobile-drawer-header img {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      border: 1.5px solid rgba(242, 90, 5, 0.5);
+      box-shadow: 0 4px 12px var(--primary-glow);
+    }
+
+    .mobile-drawer-header .drawer-title {
+      font-size: 0.96rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.25;
+    }
+
+    .mobile-drawer-header .drawer-status {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #10B981;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 3px;
+    }
+
+    .mobile-drawer-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .mobile-drawer-nav .mobile-nav-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      border-radius: 10px;
+      font-size: 0.98rem;
+      font-weight: 600;
+      color: #94A3B8;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: 1px solid transparent;
+    }
+
+    .mobile-drawer-nav .mobile-nav-link i {
+      font-size: 1.2rem;
+      color: var(--primary);
+    }
+
+    .mobile-drawer-nav .mobile-nav-link:hover,
+    .mobile-drawer-nav .mobile-nav-link:active,
+    .mobile-drawer-nav .mobile-nav-link.active {
+      background: rgba(242, 90, 5, 0.12);
+      border-color: rgba(242, 90, 5, 0.25);
+      color: #FFFFFF;
+    }
+
+    .mobile-drawer-footer {
+      margin-top: auto;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .mobile-drawer-footer .drawer-address-note {
+      font-size: 0.72rem;
+      color: #64748B;
+      text-align: center;
+      line-height: 1.4;
     }
 
     /* Section Styling */
@@ -2598,17 +2728,17 @@
         padding: 0 24px;
       }
       .header-content {
-        height: 74px;
+        height: 70px;
         padding: 0 20px;
       }
       .mobile-drawer {
-        top: 74px;
+        top: 70px;
       }
-      .nav-links, .nav-actions .btn-wa {
+      .nav-links, .nav-actions .btn-wa, .header-google-badge {
         display: none !important;
       }
       .mobile-menu-btn {
-        display: block !important;
+        display: inline-flex !important;
       }
       .hero-header-grid, .about-grid, .contact-grid {
         grid-template-columns: 1fr;
@@ -2649,27 +2779,36 @@
         padding: 0 16px;
       }
       .header-content {
-        height: 74px;
+        height: 70px;
         padding: 0 16px;
       }
+      .brand-logo {
+        max-width: calc(100% - 56px);
+      }
       .brand-logo img {
-        width: 44px;
-        height: 44px;
+        width: 42px;
+        height: 42px;
       }
       .brand-text-name {
-        font-size: 1.12rem;
+        font-size: 1.05rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
       .brand-text-slogan {
-        font-size: 0.74rem;
+        font-size: 0.72rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
       .mobile-drawer {
-        top: 74px;
+        top: 70px;
       }
-      .nav-links, .nav-actions .btn-wa {
-        display: none;
+      .nav-links, .nav-actions .btn-wa, .header-google-badge {
+        display: none !important;
       }
       .mobile-menu-btn {
-        display: block;
+        display: inline-flex !important;
       }
       .hero-tagline {
         font-size: 2.2rem;
@@ -2779,6 +2918,29 @@
     }
 
     @media (max-width: 600px) {
+      .header-content {
+        height: 68px;
+        padding: 0 14px;
+        gap: 8px;
+      }
+      .mobile-drawer {
+        top: 68px;
+        width: min(320px, 88vw);
+      }
+      .brand-logo {
+        max-width: calc(100% - 54px);
+        gap: 8px;
+      }
+      .brand-logo img {
+        width: 38px;
+        height: 38px;
+      }
+      .brand-text-name {
+        font-size: 0.96rem;
+      }
+      .brand-text-slogan {
+        font-size: 0.68rem;
+      }
       .floating-wa-btn {
         bottom: 18px;
         right: 18px;
@@ -2833,30 +2995,70 @@
     </div>
   </header>
 
-  <!-- Mobile Drawer -->
-  <div class="mobile-drawer" id="mobileDrawer">
-    <a href="#beranda" class="nav-link mobile-nav-link">Beranda</a>
-    <a href="#etalase" class="nav-link mobile-nav-link">Etalase Produk</a>
-    <a href="#tentang" class="nav-link mobile-nav-link">Tentang Kami</a>
-    <a href="#kontak" class="nav-link mobile-nav-link">Hubungi Kami</a>
-    <a href="https://wa.me/6283185791919?text=Halo%20Omah%20Thinner%20%26%20Cat,%20saya%20ingin%20tanya%20produk%20dan%20harga" target="_blank" class="btn btn-wa" style="margin-top: 10px;">
-      <i class="ri-whatsapp-line"></i> Chat WhatsApp Resmi
-    </a>
-    <div style="display: flex; gap: 8px; margin-top: 12px; justify-content: center; flex-wrap: wrap;">
-      <a href="https://www.tiktok.com/@omahthinner" target="_blank" rel="noopener noreferrer" class="social-btn tiktok-btn" style="font-size: 0.8rem; padding: 7px 12px;">
-        <i class="ri-tiktok-fill"></i> TikTok
-      </a>
-      <a href="https://instagram.com/omahthinner?exln=MXd4bXczMXU1andkNg%3D%3D" target="_blank" rel="noopener noreferrer" class="social-btn instagram-btn" style="font-size: 0.8rem; padding: 7px 12px;">
-        <i class="ri-instagram-line"></i> Instagram
-      </a>
-      <a href="https://www.facebook.com/share/1DoL1qKmyH/" target="_blank" rel="noopener noreferrer" class="social-btn facebook-btn" style="font-size: 0.8rem; padding: 7px 12px;">
-        <i class="ri-facebook-circle-fill"></i> Facebook
-      </a>
-      <a href="https://g.page/r/CfASyIPX2_4cEBM/review" target="_blank" rel="noopener noreferrer" class="social-btn google-btn" style="font-size: 0.8rem; padding: 7px 12px;">
-        <i class="ri-google-fill"></i> Ulasan Google
-      </a>
+  <!-- Backdrop Blur Overlay for Mobile Drawer -->
+  <div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
+
+  <!-- Mobile Drawer Side-Sheet (Elegan & Modern) -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Menu Navigasi Mobile">
+    <!-- Header Drawer -->
+    <div class="mobile-drawer-header">
+      <img src="img/logo-official.jpg" alt="Logo Omah Thinner & Cat">
+      <div>
+        <div class="drawer-title">OMAH THINNER &amp; CAT</div>
+        <div class="drawer-status">
+          <span class="hero-live-indicator" style="width: 7px; height: 7px;"></span>
+          Buka • Siap Pasok Bengkel
+        </div>
+      </div>
     </div>
-  </div>
+
+    <!-- Navigasi Menu Mobile -->
+    <nav class="mobile-drawer-nav" aria-label="Menu Mobile">
+      <a href="#beranda" class="mobile-nav-link active">
+        <i class="ri-home-4-line"></i>
+        <span>Beranda</span>
+      </a>
+      <a href="#etalase" class="mobile-nav-link">
+        <i class="ri-store-2-line"></i>
+        <span>Etalase Produk</span>
+      </a>
+      <a href="#tentang" class="mobile-nav-link">
+        <i class="ri-information-line"></i>
+        <span>Tentang Kami</span>
+      </a>
+      <a href="#kontak" class="mobile-nav-link">
+        <i class="ri-customer-service-2-line"></i>
+        <span>Hubungi Kami</span>
+      </a>
+    </nav>
+
+    <!-- Footer Drawer & Action Links -->
+    <div class="mobile-drawer-footer">
+      <a href="https://wa.me/6283185791919?text=Halo%20Omah%20Thinner%20%26%20Cat,%20saya%20ingin%20tanya%20produk%20dan%20harga" target="_blank" rel="noopener noreferrer" class="btn btn-wa" style="width: 100%; justify-content: center; font-size: 0.88rem; padding: 11px 16px;">
+        <i class="ri-whatsapp-line"></i> Chat WhatsApp Resmi
+      </a>
+
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px;">
+        <a href="https://www.tiktok.com/@omahthinner" target="_blank" rel="noopener noreferrer" class="social-btn tiktok-btn" style="font-size: 0.78rem; padding: 8px 10px; justify-content: center;">
+          <i class="ri-tiktok-fill"></i> TikTok
+        </a>
+        <a href="https://instagram.com/omahthinner?exln=MXd4bXczMXU1andkNg%3D%3D" target="_blank" rel="noopener noreferrer" class="social-btn instagram-btn" style="font-size: 0.78rem; padding: 8px 10px; justify-content: center;">
+          <i class="ri-instagram-line"></i> Instagram
+        </a>
+        <a href="https://www.facebook.com/share/1DoL1qKmyH/" target="_blank" rel="noopener noreferrer" class="social-btn facebook-btn" style="font-size: 0.78rem; padding: 8px 10px; justify-content: center;">
+          <i class="ri-facebook-circle-fill"></i> Facebook
+        </a>
+        <a href="https://g.page/r/CfASyIPX2_4cEBM/review" target="_blank" rel="noopener noreferrer" class="social-btn google-btn" style="font-size: 0.78rem; padding: 8px 10px; justify-content: center;">
+          <i class="ri-google-fill"></i> Ulasan Google
+        </a>
+      </div>
+
+      <div class="drawer-address-note">
+        📍 Krajan, Suruh, Kab. Semarang<br>
+        Senin - Sabtu: 08.00 - 17.00 WIB
+      </div>
+    </div>
+  </aside>
 
   <!-- ==================== 1. BERANDA (SHOWCASE UTAMA PALING ATAS, ELEGAN & PROFESIONAL) ==================== -->
   <section id="beranda">
@@ -3699,40 +3901,72 @@
     function initMobileMenu() {
       const menuBtn = document.getElementById('mobileMenuBtn');
       const drawer = document.getElementById('mobileDrawer');
+      const overlay = document.getElementById('drawerOverlay');
       const links = document.querySelectorAll('.mobile-nav-link');
 
-      if (menuBtn && drawer) {
-        menuBtn.addEventListener('click', () => {
-          drawer.classList.toggle('open');
-          const isOpen = drawer.classList.contains('open');
-          menuBtn.innerHTML = isOpen ? '<i class="ri-close-line"></i>' : '<i class="ri-menu-line"></i>';
-          menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-          if (isOpen) {
-            document.body.classList.add('drawer-open');
-          } else {
-            document.body.classList.remove('drawer-open');
-          }
-        });
+      if (!menuBtn || !drawer) return;
 
-        links.forEach(link => {
-          link.addEventListener('click', () => {
-            drawer.classList.remove('open');
-            document.body.classList.remove('drawer-open');
-            menuBtn.innerHTML = '<i class="ri-menu-line"></i>';
-            menuBtn.setAttribute('aria-expanded', 'false');
-          });
-        });
+      function openMenu() {
+        drawer.classList.add('open');
+        menuBtn.classList.add('active');
+        menuBtn.setAttribute('aria-expanded', 'true');
+        menuBtn.innerHTML = '<i class="ri-close-line"></i>';
+        document.body.classList.add('drawer-open');
+        if (overlay) overlay.classList.add('open');
+      }
 
-        // Tutup jika klik di luar drawer
-        document.addEventListener('click', (e) => {
-          if (drawer.classList.contains('open') && !drawer.contains(e.target) && !menuBtn.contains(e.target)) {
-            drawer.classList.remove('open');
-            document.body.classList.remove('drawer-open');
-            menuBtn.innerHTML = '<i class="ri-menu-line"></i>';
-            menuBtn.setAttribute('aria-expanded', 'false');
-          }
+      function closeMenu() {
+        drawer.classList.remove('open');
+        menuBtn.classList.remove('active');
+        menuBtn.setAttribute('aria-expanded', 'false');
+        menuBtn.innerHTML = '<i class="ri-menu-line"></i>';
+        document.body.classList.remove('drawer-open');
+        if (overlay) overlay.classList.remove('open');
+      }
+
+      function toggleMenu(e) {
+        if (e) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+        if (drawer.classList.contains('open')) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      }
+
+      // Tap / Click button event
+      menuBtn.addEventListener('click', toggleMenu);
+
+      // Overlay dismiss
+      if (overlay) {
+        overlay.addEventListener('click', (e) => {
+          e.stopPropagation();
+          closeMenu();
         });
       }
+
+      // Nav link click dismiss
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          closeMenu();
+        });
+      });
+
+      // Tutup jika klik di luar drawer
+      document.addEventListener('click', (e) => {
+        if (drawer.classList.contains('open') && !drawer.contains(e.target) && !menuBtn.contains(e.target)) {
+          closeMenu();
+        }
+      });
+
+      // Tutup jika tombol ESC ditekan
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && drawer.classList.contains('open')) {
+          closeMenu();
+        }
+      });
     }
 
     function initScrollSpy() {
