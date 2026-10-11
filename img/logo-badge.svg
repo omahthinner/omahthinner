@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <!-- Warm Cream Canvas -->
+  <rect width="500" height="500" fill="#f4efe6"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Roof Chevron (Black) -->
+    <path d="M 160 160 L 250 90 L 340 160" fill="none" stroke="#1f1f1f" stroke-width="17" stroke-linecap="square" stroke-linejoin="miter"/>
+    
+    <!-- Paint Droplet (Vibrant Orange) -->
+    <path d="M 250 142 C 250 142 282 195 282 215 C 282 233 268 247 250 247 C 232 247 218 233 218 215 C 218 195 250 142 250 142 Z" fill="#f25a05"/>
+    
+    <!-- Cutout Window inside Droplet (Cream) -->
+    <rect x="231" y="195" width="38" height="42" rx="7" fill="#f4efe6"/>
+    
+    <!-- Main Brand Name: OMAH (High Contrast Serif) -->
+    <text x="250" y="328" font-family="'Playfair Display', 'Didot', 'Bodoni MT', 'Times New Roman', serif" font-weight="700" font-size="64" fill="#141414" text-anchor="middle" letter-spacing="12">OMAH</text>
+    
+    <!-- Divider with Center Orange Diamond -->
+    <line x1="135" y1="372" x2="230" y2="372" stroke="#686868" stroke-width="1.2"/>
+    <polygon points="250,366 256,372 250,378 244,372" fill="#f25a05"/>
+    <line x1="270" y1="372" x2="365" y2="372" stroke="#686868" stroke-width="1.2"/>
+    
+    <!-- Subtitle: THINNER & CAT (Spaced Sans) -->
+    <text x="250" y="408" font-family="'Plus Jakarta Sans', 'Outfit', 'Montserrat', sans-serif" font-weight="600" font-size="19" fill="#525252" text-anchor="middle" letter-spacing="9">THINNER &amp; CAT</text>
+  </g>
+</svg>

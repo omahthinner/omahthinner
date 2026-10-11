@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="compBg" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <linearGradient id="compCan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="40%" stop-color="#d97706"/>
+      <stop offset="70%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="20" fill="url(#compBg)"/>
+  <circle cx="200" cy="200" r="140" fill="#f59e0b" opacity="0.12" filter="blur(30px)"/>
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="336" rx="100" ry="16" fill="#000000" opacity="0.5"/>
+
+  <!-- Compound Flat Tub -->
+  <ellipse cx="200" cy="190" rx="100" ry="24" fill="#fbbf24" stroke="#fef3c7" stroke-width="2"/>
+  <path d="M100 190 L110 300 Q200 325 290 300 L300 190 Z" fill="url(#compCan)" stroke="#fde68a" stroke-width="1.5"/>
+  <ellipse cx="200" cy="300" rx="90" ry="16" fill="#78350f"/>
+
+  <!-- Label -->
+  <rect x="130" y="215" width="140" height="75" rx="6" fill="#0f172a"/>
+  <text x="200" y="240" font-family="'Outfit', sans-serif" font-weight="900" font-size="14" fill="#fbbf24" text-anchor="middle" letter-spacing="1">RUBBING COMPOUND</text>
+  <text x="200" y="258" font-family="'Outfit', sans-serif" font-weight="900" font-size="16" fill="#ffffff" text-anchor="middle">KOMPON POLES</text>
+  <text x="200" y="276" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="9" fill="#94a3b8" text-anchor="middle">HILANGKAN BARET &bull; KILAU ALAMI</text>
+</svg>

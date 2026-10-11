@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="thinnerBg" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <linearGradient id="canMetal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="25%" stop-color="#94a3b8"/>
+      <stop offset="50%" stop-color="#f8fafc"/>
+      <stop offset="75%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="labelGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c2410c"/>
+      <stop offset="50%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Card -->
+  <rect width="400" height="400" rx="20" fill="url(#thinnerBg)"/>
+  <circle cx="200" cy="200" r="140" fill="#ea580c" opacity="0.12" filter="blur(30px)"/>
+
+  <!-- Thinner Tin Container -->
+  <!-- Top Handle / Cap -->
+  <rect x="180" y="70" width="40" height="18" rx="4" fill="#64748b" stroke="#94a3b8" stroke-width="2"/>
+  <rect x="160" y="88" width="80" height="14" rx="3" fill="#475569"/>
+  <!-- Main Can Body -->
+  <rect x="110" y="100" width="180" height="230" rx="16" fill="url(#canMetal)" stroke="#cbd5e1" stroke-width="2"/>
+  <!-- Label on Can -->
+  <rect x="120" y="140" width="160" height="150" rx="8" fill="url(#labelGold)"/>
+  <rect x="126" y="146" width="148" height="138" rx="6" fill="#0f172a"/>
+  
+  <!-- Label Graphics -->
+  <path d="M200 160 C200 160, 214 176, 214 186 C214 194, 208 200, 200 200 C192 200, 186 194, 186 186 C186 176, 200 160, 200 160 Z" fill="#ea580c"/>
+  <text x="200" y="218" font-family="'Outfit', sans-serif" font-weight="900" font-size="15" fill="#f59e0b" text-anchor="middle" letter-spacing="1">MONSTER THINNER</text>
+  <text x="200" y="238" font-family="'Outfit', sans-serif" font-weight="900" font-size="20" fill="#ffffff" text-anchor="middle" letter-spacing="2">SUPER PU</text>
+  <rect x="145" y="246" width="110" height="18" rx="9" fill="#ea580c"/>
+  <text x="200" y="259" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="10.5" fill="#ffffff" text-anchor="middle">100% PELARUT MURNI</text>
+  <text x="200" y="276" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="9.5" fill="#94a3b8" text-anchor="middle">HIGH GLOSS &bull; ANTI BLUSHING</text>
+  
+  <!-- Shadow Under Can -->
+  <ellipse cx="200" cy="342" rx="95" ry="14" fill="#000000" opacity="0.45"/>
+</svg>

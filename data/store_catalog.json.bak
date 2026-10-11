@@ -1,0 +1,2056 @@
+{
+  "store_info": {
+    "company_name": "TOKO OMAH THINNER & CAT",
+    "store_name": "Toko Omah Thinner & Cat",
+    "slogan": "Solusi hemat untuk hasil yang berkualitas",
+    "business_type": "Toko Retail & Grosir",
+    "owner_name": "Ajid",
+    "address": "Jl. Raya Karanggede - Suruh, Krajan, Suruh, Kec. Suruh, Kabupaten Semarang, Jawa Tengah 50776",
+    "phone": "083185791919",
+    "whatsapp": "6283185791919",
+    "email": "omahthinnercat@gmail.com",
+    "npwp": "01.889.345.6-541.000",
+    "nib": "9120001234567",
+    "opening_hours": "Senin - Sabtu: 08.00 - 17.00 WIB",
+    "google_maps_url": "https://maps.google.com/?q=Suruh+Semarang+Omah+Thinner+Cat",
+    "store_logo": "img/logo-official.jpg"
+  },
+  "categories": [
+    {
+      "id": "cat_1787955008877",
+      "name": "Dempul"
+    },
+    {
+      "id": "cat_1787957687285",
+      "name": "Thinner"
+    },
+    {
+      "id": "cat_1788748113660",
+      "name": "clear/pernish"
+    },
+    {
+      "id": "cat_1788748806953",
+      "name": "Cat"
+    },
+    {
+      "id": "cat_1788749443068",
+      "name": "Epoxy"
+    },
+    {
+      "id": "cat_1788863201650",
+      "name": "Amplas"
+    },
+    {
+      "id": "cat_1788878267711",
+      "name": "Melamine"
+    },
+    {
+      "id": "cat_1788879765295",
+      "name": "Sealer"
+    },
+    {
+      "id": "cat_1788881551106",
+      "name": "Coumpond"
+    },
+    {
+      "id": "cat_1788882058937",
+      "name": "Zinc Chromate/ Meni"
+    },
+    {
+      "id": "cat_1788882513766",
+      "name": "PP Primer"
+    },
+    {
+      "id": "cat_1788882759162",
+      "name": "Obat Doff"
+    },
+    {
+      "id": "cat_1788882882553",
+      "name": "Hammertone"
+    },
+    {
+      "id": "cat_1788883149878",
+      "name": "Flinkote"
+    },
+    {
+      "id": "cat_1789050982321",
+      "name": "Kuas"
+    },
+    {
+      "id": "cat_1789053916426",
+      "name": "Koran"
+    },
+    {
+      "id": "cat_1789537180919",
+      "name": "Remover"
+    },
+    {
+      "id": "cat_1789558889177",
+      "name": "Kaleng"
+    },
+    {
+      "id": "cat_1790492459565",
+      "name": "Lembayung"
+    }
+  ],
+  "brands": [
+    "Alfagloss",
+    "Monster Thinner",
+    "Dumons",
+    "Dms",
+    "Tanuri",
+    "Hornet",
+    "Polibest",
+    "RMC",
+    "Ivory",
+    "Eterna",
+    "Camel",
+    "Nashua"
+  ],
+  "products": [
+    {
+      "id": "prod_1787955077175",
+      "name": "Alfa gloss",
+      "category_id": "cat_1787955008877",
+      "category_name": "Dempul",
+      "brand_name": "Alfagloss",
+      "description": "",
+      "image": "uploads/prod_alfa_gloss_077175.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Besar",
+          "price": 125000.0,
+          "stock": 8.0,
+          "sku": "OTC-DEM-001"
+        },
+        {
+          "name": "Sedang",
+          "price": 50000.0,
+          "stock": 11.0,
+          "sku": "OTC-DEM-002"
+        },
+        {
+          "name": "Kecil",
+          "price": 22000.0,
+          "stock": 17.0,
+          "sku": "OTC-DEM-003"
+        }
+      ],
+      "min_price": 22000.0,
+      "max_price": 125000.0,
+      "total_stock": 36.0
+    },
+    {
+      "id": "prod_1787958015030",
+      "name": "Monster Thinner",
+      "category_id": "cat_1787957687285",
+      "category_name": "Thinner",
+      "brand_name": "Monster Thinner",
+      "description": "pengencer cat",
+      "image": "uploads/prod_monster_thinner_015030.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "HG",
+          "price": 40000.0,
+          "stock": 47.0,
+          "sku": "OTC-THI-004"
+        },
+        {
+          "name": "Nd-300",
+          "price": 35000.0,
+          "stock": 52.486,
+          "sku": "OTC-THI-005"
+        },
+        {
+          "name": "Super",
+          "price": 30000.0,
+          "stock": 65.5,
+          "sku": "OTC-THI-006"
+        },
+        {
+          "name": "Pu+",
+          "price": 50000.0,
+          "stock": 34.86,
+          "sku": "OTC-THI-007"
+        },
+        {
+          "name": "Pu Mp",
+          "price": 47000.0,
+          "stock": 9.212,
+          "sku": "OTC-THI-008"
+        },
+        {
+          "name": "B",
+          "price": 24000.0,
+          "stock": 13.0,
+          "sku": "OTC-THI-009"
+        }
+      ],
+      "min_price": 24000.0,
+      "max_price": 50000.0,
+      "total_stock": 222.058
+    },
+    {
+      "id": "prod_1788575454711",
+      "name": "Clear S1",
+      "category_id": "cat_1788748113660",
+      "category_name": "clear/pernish",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_clear_s1_454711.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "kg",
+          "price": 170000.0,
+          "stock": 1.0,
+          "sku": "OTC-CLE-010"
+        }
+      ],
+      "min_price": 170000.0,
+      "max_price": 170000.0,
+      "total_stock": 1.0
+    },
+    {
+      "id": "prod_1788587872816",
+      "name": "Thinner DMS",
+      "category_id": "cat_1787957687285",
+      "category_name": "Thinner",
+      "brand_name": "Dms",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "HG",
+          "price": 28000.0,
+          "stock": 98.0,
+          "sku": "OTC-THI-011"
+        },
+        {
+          "name": "ND",
+          "price": 27000.0,
+          "stock": 29.295,
+          "sku": "OTC-THI-012"
+        },
+        {
+          "name": "A",
+          "price": 22000.0,
+          "stock": 0.0,
+          "sku": "OTC-THI-013"
+        }
+      ],
+      "min_price": 22000.0,
+      "max_price": 28000.0,
+      "total_stock": 127.295
+    },
+    {
+      "id": "prod_1788595678688",
+      "name": "Epoxy Filler",
+      "category_id": "cat_1788749443068",
+      "category_name": "Epoxy",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_epoxy_filler_678688.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Grey",
+          "price": 85000.0,
+          "stock": 7.0,
+          "sku": "OTC-EPO-014"
+        },
+        {
+          "name": "Hitam",
+          "price": 85000.0,
+          "stock": 0.0,
+          "sku": "OTC-EPO-015"
+        },
+        {
+          "name": "Putih",
+          "price": 85000.0,
+          "stock": 13.0,
+          "sku": "OTC-EPO-016"
+        }
+      ],
+      "min_price": 85000.0,
+      "max_price": 85000.0,
+      "total_stock": 20.0
+    },
+    {
+      "id": "prod_1788748731801",
+      "name": "Tanuri",
+      "category_id": "cat_1787955008877",
+      "category_name": "Dempul",
+      "brand_name": "Tanuri",
+      "description": "",
+      "image": "uploads/prod_tanuri_731801.webp",
+      "active": true,
+      "variants": [
+        {
+          "name": "Galon",
+          "price": 128000.0,
+          "stock": 20.0,
+          "sku": "OTC-DEM-017"
+        },
+        {
+          "name": "Kiloan",
+          "price": 50000.0,
+          "stock": 9.0,
+          "sku": "OTC-DEM-018"
+        }
+      ],
+      "min_price": 50000.0,
+      "max_price": 128000.0,
+      "total_stock": 29.0
+    },
+    {
+      "id": "prod_1788748810719",
+      "name": "Cat Hornet Kg (Std)",
+      "category_id": "cat_1788748806953",
+      "category_name": "Cat",
+      "brand_name": "Hornet",
+      "description": "",
+      "image": "uploads/prod_cat_hornet_kg__std__810719.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Black doff",
+          "price": 90000.0,
+          "stock": 7.0,
+          "sku": "OTC-CAT-019"
+        },
+        {
+          "name": "Super Black",
+          "price": 90000.0,
+          "stock": 0.0,
+          "sku": "OTC-CAT-020"
+        },
+        {
+          "name": "Super White",
+          "price": 90000.0,
+          "stock": 6.0,
+          "sku": "OTC-CAT-021"
+        },
+        {
+          "name": "Silver",
+          "price": 90000.0,
+          "stock": 8.0,
+          "sku": "OTC-CAT-022"
+        }
+      ],
+      "min_price": 90000.0,
+      "max_price": 90000.0,
+      "total_stock": 21.0
+    },
+    {
+      "id": "prod_1788842541713",
+      "name": "Cat Dumons Kg (Std)",
+      "category_id": "cat_1788748806953",
+      "category_name": "Cat",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_cat_dumons_kg__std__541713.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Super Black",
+          "price": 110000.0,
+          "stock": 8.0,
+          "sku": "CAT-CDK(-SUPE"
+        },
+        {
+          "name": "Super White",
+          "price": 110000.0,
+          "stock": 8.0,
+          "sku": "CAT-CDK(-SUPE-01"
+        },
+        {
+          "name": "Black Doff",
+          "price": 110000.0,
+          "stock": 5.0,
+          "sku": "CAT-CDK(-BLAC"
+        },
+        {
+          "name": "Silver",
+          "price": 110000.0,
+          "stock": 3.0,
+          "sku": "CAT-CDK(-SILV"
+        },
+        {
+          "name": "Semi Doff",
+          "price": 110000.0,
+          "stock": 6.0,
+          "sku": "CAT-CDK(-SEMI"
+        },
+        {
+          "name": "Wf Black",
+          "price": 110000.0,
+          "stock": 2.0,
+          "sku": "CAT-CDK(-WFBL"
+        }
+      ],
+      "min_price": 110000.0,
+      "max_price": 110000.0,
+      "total_stock": 32.0
+    },
+    {
+      "id": "prod_1788861273437",
+      "name": "Cat Dumons 1/4 (Std)",
+      "category_id": "cat_1788748806953",
+      "category_name": "Cat",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_cat_dumons_1_4__std__273437.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Super Black",
+          "price": 30000.0,
+          "stock": 23.0,
+          "sku": "OTC-CAT-027"
+        },
+        {
+          "name": "Super White",
+          "price": 30000.0,
+          "stock": 17.0,
+          "sku": "OTC-CAT-028"
+        },
+        {
+          "name": "Black Doff",
+          "price": 30000.0,
+          "stock": 10.0,
+          "sku": "OTC-CAT-029"
+        },
+        {
+          "name": "Silver",
+          "price": 30000.0,
+          "stock": 24.0,
+          "sku": "OTC-CAT-030"
+        }
+      ],
+      "min_price": 30000.0,
+      "max_price": 30000.0,
+      "total_stock": 74.0
+    },
+    {
+      "id": "prod_1788861532797",
+      "name": "Cat Dumons Galon (Std)",
+      "category_id": "cat_1788748806953",
+      "category_name": "Cat",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_cat_dumons_galon__std__532797.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Super Black",
+          "price": 525000.0,
+          "stock": 0.0,
+          "sku": "OTC-CAT-031"
+        },
+        {
+          "name": "Super White",
+          "price": 525000.0,
+          "stock": 0.0,
+          "sku": "OTC-CAT-032"
+        },
+        {
+          "name": "Black Doff",
+          "price": 525000.0,
+          "stock": 0.0,
+          "sku": "OTC-CAT-033"
+        },
+        {
+          "name": "Silver",
+          "price": 5250000.0,
+          "stock": 0.0,
+          "sku": "OTC-CAT-034"
+        }
+      ],
+      "min_price": 525000.0,
+      "max_price": 5250000.0,
+      "total_stock": 0.0
+    },
+    {
+      "id": "prod_1788862189507",
+      "name": "Dempul Max",
+      "category_id": "cat_1787955008877",
+      "category_name": "Dempul",
+      "brand_name": "Alfagloss",
+      "description": "",
+      "image": "uploads/prod_dempul_max_189507.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Galon",
+          "price": 103000.0,
+          "stock": 15.0,
+          "sku": "OTC-DEM-035"
+        }
+      ],
+      "min_price": 103000.0,
+      "max_price": 103000.0,
+      "total_stock": 15.0
+    },
+    {
+      "id": "prod_1788862228264",
+      "name": "Dempul DMS",
+      "category_id": "cat_1787955008877",
+      "category_name": "Dempul",
+      "brand_name": "Dms",
+      "description": "",
+      "image": "uploads/prod_dempul_dms_228264.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Galon",
+          "price": 120000.0,
+          "stock": 17.0,
+          "sku": "OTC-DEM-036"
+        }
+      ],
+      "min_price": 120000.0,
+      "max_price": 120000.0,
+      "total_stock": 17.0
+    },
+    {
+      "id": "prod_1788862490250",
+      "name": "Thinner Polibest",
+      "category_id": "cat_1787957687285",
+      "category_name": "Thinner",
+      "brand_name": "Polibest",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "Pu Xm",
+          "price": 40000.0,
+          "stock": 5.0,
+          "sku": "OTC-THI-037"
+        }
+      ],
+      "min_price": 40000.0,
+      "max_price": 40000.0,
+      "total_stock": 5.0
+    },
+    {
+      "id": "prod_1788863399837",
+      "name": "Amplas RMC",
+      "category_id": "cat_1788863201650",
+      "category_name": "Amplas",
+      "brand_name": "RMC",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "Grit 150-1500",
+          "price": 5000.0,
+          "stock": 338.0,
+          "sku": "OTC-AMP-038"
+        }
+      ],
+      "min_price": 5000.0,
+      "max_price": 5000.0,
+      "total_stock": 338.0
+    },
+    {
+      "id": "prod_1788863407767",
+      "name": "Amplas Dms",
+      "category_id": "cat_1788863201650",
+      "category_name": "Amplas",
+      "brand_name": "Dms",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "Grit 150-2000",
+          "price": 5000.0,
+          "stock": 1044.0,
+          "sku": "OTC-AMP-039"
+        }
+      ],
+      "min_price": 5000.0,
+      "max_price": 5000.0,
+      "total_stock": 1044.0
+    },
+    {
+      "id": "prod_1788871655201",
+      "name": "Clear S2",
+      "category_id": "cat_1788748113660",
+      "category_name": "clear/pernish",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_clear_s2_655201.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Kg",
+          "price": 208000.0,
+          "stock": 2.0,
+          "sku": "OTC-CLE-040"
+        },
+        {
+          "name": "1/4",
+          "price": 60000.0,
+          "stock": 9.0,
+          "sku": "OTC-CLE-041"
+        }
+      ],
+      "min_price": 60000.0,
+      "max_price": 208000.0,
+      "total_stock": 11.0
+    },
+    {
+      "id": "prod_1788871846341",
+      "name": "Clear 901",
+      "category_id": "cat_1788748113660",
+      "category_name": "clear/pernish",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_clear_901_846341.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Gloss (Kg)",
+          "price": 145000.0,
+          "stock": 7.0,
+          "sku": "OTC-CLE-042"
+        },
+        {
+          "name": "Gloss (1/4)",
+          "price": 40000.0,
+          "stock": 3.0,
+          "sku": "OTC-CLE-044"
+        }
+      ],
+      "min_price": 40000.0,
+      "max_price": 145000.0,
+      "total_stock": 10.0
+    },
+    {
+      "id": "prod_1788871941397",
+      "name": "Hornet 2:1",
+      "category_id": "cat_1788748113660",
+      "category_name": "clear/pernish",
+      "brand_name": "Hornet",
+      "description": "",
+      "image": "uploads/prod_hornet_2_1_941397.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Kg",
+          "price": 145000.0,
+          "stock": 3.0,
+          "sku": "OTC-CLE-046"
+        }
+      ],
+      "min_price": 145000.0,
+      "max_price": 145000.0,
+      "total_stock": 3.0
+    },
+    {
+      "id": "prod_1788872160533",
+      "name": "Clear Hornet 4:1",
+      "category_id": "cat_1788748113660",
+      "category_name": "clear/pernish",
+      "brand_name": "Hornet",
+      "description": "",
+      "image": "uploads/prod_clear_hornet_4_1_160533.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Kg",
+          "price": 85000.0,
+          "stock": 8.0,
+          "sku": "OTC-CLE-047"
+        },
+        {
+          "name": "1/4",
+          "price": 30000.0,
+          "stock": 26.0,
+          "sku": "OTC-CLE-048"
+        }
+      ],
+      "min_price": 30000.0,
+      "max_price": 85000.0,
+      "total_stock": 34.0
+    },
+    {
+      "id": "prod_1788872847689",
+      "name": "Showroom 4:1",
+      "category_id": "cat_1788748113660",
+      "category_name": "clear/pernish",
+      "brand_name": "Standar Toko",
+      "description": "",
+      "image": "uploads/prod_showroom_4_1_847689.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Kg",
+          "price": 115000.0,
+          "stock": 0.0,
+          "sku": "OTC-CLE-049"
+        },
+        {
+          "name": "1/4",
+          "price": 45000.0,
+          "stock": 2.0,
+          "sku": "OTC-CLE-050"
+        }
+      ],
+      "min_price": 45000.0,
+      "max_price": 115000.0,
+      "total_stock": 2.0
+    },
+    {
+      "id": "prod_1788879213215",
+      "name": "Mel.Clear",
+      "category_id": "cat_1788878267711",
+      "category_name": "Melamine",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_mel_clear_213215.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Gloss (Gln)",
+          "price": 310000.0,
+          "stock": 3.0,
+          "sku": "OTC-MEL-051"
+        },
+        {
+          "name": "Doff (Kg)",
+          "price": 78000.0,
+          "stock": 4.0,
+          "sku": "OTC-MEL-052"
+        },
+        {
+          "name": "Gloss (Kg)",
+          "price": 75000.0,
+          "stock": 3.0,
+          "sku": "OTC-MEL-053"
+        }
+      ],
+      "min_price": 75000.0,
+      "max_price": 310000.0,
+      "total_stock": 10.0
+    },
+    {
+      "id": "prod_1788879368993",
+      "name": "Mel. Sending",
+      "category_id": "cat_1788878267711",
+      "category_name": "Melamine",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_mel__sending_368993.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Gln",
+          "price": 285000.0,
+          "stock": 2.0,
+          "sku": "OTC-MEL-054"
+        },
+        {
+          "name": "Kg",
+          "price": 70000.0,
+          "stock": 6.0,
+          "sku": "OTC-MEL-055"
+        }
+      ],
+      "min_price": 70000.0,
+      "max_price": 285000.0,
+      "total_stock": 8.0
+    },
+    {
+      "id": "prod_1788879481180",
+      "name": "Wood Filler",
+      "category_id": "cat_1788878267711",
+      "category_name": "Melamine",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_wood_filler_481180.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Gln",
+          "price": 13000.0,
+          "stock": 0.0,
+          "sku": "OTC-MEL-056"
+        },
+        {
+          "name": "Kg",
+          "price": 50000.0,
+          "stock": 6.0,
+          "sku": "OTC-MEL-057"
+        }
+      ],
+      "min_price": 13000.0,
+      "max_price": 50000.0,
+      "total_stock": 6.0
+    },
+    {
+      "id": "prod_1788879677670",
+      "name": "Wood Stain",
+      "category_id": "cat_1788878267711",
+      "category_name": "Melamine",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_wood_stain_677670.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Cocoa Brown",
+          "price": 75000.0,
+          "stock": 3.0,
+          "sku": "OTC-MEL-058"
+        },
+        {
+          "name": "Walnut Brown",
+          "price": 75000.0,
+          "stock": 5.0,
+          "sku": "OTC-MEL-059"
+        },
+        {
+          "name": "Salak Brown",
+          "price": 75000.0,
+          "stock": 2.0,
+          "sku": "OTC-MEL-060"
+        },
+        {
+          "name": "Candy Brown",
+          "price": 75000.0,
+          "stock": 2.0,
+          "sku": "OTC-MEL-061"
+        }
+      ],
+      "min_price": 75000.0,
+      "max_price": 75000.0,
+      "total_stock": 12.0
+    },
+    {
+      "id": "prod_1788879846823",
+      "name": "Sealer Silicon",
+      "category_id": "cat_1788879765295",
+      "category_name": "Sealer",
+      "brand_name": "Dms",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "set",
+          "price": 25000.0,
+          "stock": 13.0,
+          "sku": "OTC-SEA-062"
+        }
+      ],
+      "min_price": 25000.0,
+      "max_price": 25000.0,
+      "total_stock": 13.0
+    },
+    {
+      "id": "prod_1788879965983",
+      "name": "Sealer Pu",
+      "category_id": "cat_1788879765295",
+      "category_name": "Sealer",
+      "brand_name": "Dms",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "Kaca",
+          "price": 63000.0,
+          "stock": 3.0,
+          "sku": "OTC-SEA-063"
+        },
+        {
+          "name": "Body",
+          "price": 63000.0,
+          "stock": 3.0,
+          "sku": "OTC-SEA-064"
+        }
+      ],
+      "min_price": 63000.0,
+      "max_price": 63000.0,
+      "total_stock": 6.0
+    },
+    {
+      "id": "prod_1788880466115",
+      "name": "Epoxy Primer Surfacer",
+      "category_id": "cat_1788749443068",
+      "category_name": "Epoxy",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_epoxy_primer_surfacer_466115.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Kg",
+          "price": 105000.0,
+          "stock": 6.0,
+          "sku": "OTC-EPO-065"
+        },
+        {
+          "name": "1/4",
+          "price": 35000.0,
+          "stock": 15.0,
+          "sku": "OTC-EPO-066"
+        }
+      ],
+      "min_price": 35000.0,
+      "max_price": 105000.0,
+      "total_stock": 21.0
+    },
+    {
+      "id": "prod_1788880750282",
+      "name": "2k Pu Surfacer",
+      "category_id": "cat_1788749443068",
+      "category_name": "Epoxy",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_2k_pu_surfacer_750282.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Kg",
+          "price": 90000.0,
+          "stock": 6.0,
+          "sku": "OTC-EPO-067"
+        },
+        {
+          "name": "1/4",
+          "price": 30000.0,
+          "stock": 10.0,
+          "sku": "OTC-EPO-068"
+        }
+      ],
+      "min_price": 30000.0,
+      "max_price": 90000.0,
+      "total_stock": 16.0
+    },
+    {
+      "id": "prod_1788881041427",
+      "name": "Epoxy Filler Alfa",
+      "category_id": "cat_1788749443068",
+      "category_name": "Epoxy",
+      "brand_name": "Alfagloss",
+      "description": "",
+      "image": "uploads/prod_epoxy_filler_alfa_041427.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Kg",
+          "price": 95000.0,
+          "stock": 6.0,
+          "sku": "OTC-EPO-069"
+        },
+        {
+          "name": "1/4",
+          "price": 38000.0,
+          "stock": 0.0,
+          "sku": "OTC-EPO-070"
+        }
+      ],
+      "min_price": 38000.0,
+      "max_price": 95000.0,
+      "total_stock": 6.0
+    },
+    {
+      "id": "prod_1788881498315",
+      "name": "HIT 2K Pu Filler",
+      "category_id": "cat_1788749443068",
+      "category_name": "Epoxy",
+      "brand_name": "Tanuri",
+      "description": "",
+      "image": "uploads/prod_hit_2k_pu_filler_498315.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Kg",
+          "price": 93000.0,
+          "stock": 0.0,
+          "sku": "OTC-EPO-071"
+        },
+        {
+          "name": "1/4",
+          "price": 33000.0,
+          "stock": 0.0,
+          "sku": "OTC-EPO-072"
+        }
+      ],
+      "min_price": 33000.0,
+      "max_price": 93000.0,
+      "total_stock": 0.0
+    },
+    {
+      "id": "prod_1788881611332",
+      "name": "Tanuri Eco",
+      "category_id": "cat_1788881551106",
+      "category_name": "Coumpond",
+      "brand_name": "Tanuri",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "Kg",
+          "price": 130000.0,
+          "stock": 11.0,
+          "sku": "OTC-COU-073"
+        }
+      ],
+      "min_price": 130000.0,
+      "max_price": 130000.0,
+      "total_stock": 11.0
+    },
+    {
+      "id": "prod_1788881736111",
+      "name": "Rubbing Coumpond Ivory",
+      "category_id": "cat_1788881551106",
+      "category_name": "Coumpond",
+      "brand_name": "Ivory",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "Kg",
+          "price": 75000.0,
+          "stock": 14.0,
+          "sku": "OTC-COU-074"
+        }
+      ],
+      "min_price": 75000.0,
+      "max_price": 75000.0,
+      "total_stock": 14.0
+    },
+    {
+      "id": "prod_1788881863404",
+      "name": "Rubing Tube Alfa",
+      "category_id": "cat_1788881551106",
+      "category_name": "Coumpond",
+      "brand_name": "Alfagloss",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "Default",
+          "price": 10000.0,
+          "stock": 29.0,
+          "sku": "OTC-COU-075"
+        }
+      ],
+      "min_price": 10000.0,
+      "max_price": 10000.0,
+      "total_stock": 29.0
+    },
+    {
+      "id": "prod_1788881974581",
+      "name": "Compond Bakar (Pu)",
+      "category_id": "cat_1788881551106",
+      "category_name": "Coumpond",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "Kecil",
+          "price": 55000.0,
+          "stock": 5.0,
+          "sku": "OTC-COU-076"
+        }
+      ],
+      "min_price": 55000.0,
+      "max_price": 55000.0,
+      "total_stock": 5.0
+    },
+    {
+      "id": "prod_1788882292000",
+      "name": "Zinc Chromate/Meni",
+      "category_id": "cat_1788882058937",
+      "category_name": "Zinc Chromate/ Meni",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "Dark Grey (Gln)",
+          "price": 110000.0,
+          "stock": 3.0,
+          "sku": "OTC-ZICH-077"
+        },
+        {
+          "name": "Dark Grey (Kg)",
+          "price": 50000.0,
+          "stock": 4.0,
+          "sku": "OTC-ZICH-078"
+        }
+      ],
+      "min_price": 50000.0,
+      "max_price": 110000.0,
+      "total_stock": 7.0
+    },
+    {
+      "id": "prod_1788882724041",
+      "name": "PP Primer",
+      "category_id": "cat_1788882513766",
+      "category_name": "PP Primer",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "Black Mate Kg",
+          "price": 100000.0,
+          "stock": 2.0,
+          "sku": "PPPR-PPPR-BLAC"
+        },
+        {
+          "name": "Black mate 1/4",
+          "price": 30000.0,
+          "stock": 3.0,
+          "sku": "PPPR-PPPR-BLAC-01"
+        },
+        {
+          "name": "Silver Kg",
+          "price": 100000.0,
+          "stock": 1.0,
+          "sku": "PPPR-PPPR-SILV"
+        },
+        {
+          "name": "Light Grey Kg",
+          "price": 100000.0,
+          "stock": 1.0,
+          "sku": "PPPR-PPPR-LIGH"
+        },
+        {
+          "name": "Silver 1/4",
+          "price": 30000.0,
+          "stock": 2.0,
+          "sku": "PPPR-PPPR-SILV-01"
+        },
+        {
+          "name": "Light Grey 1/4",
+          "price": 30000.0,
+          "stock": 3.0,
+          "sku": "PPPR-PPPR-LIGH-01"
+        }
+      ],
+      "min_price": 30000.0,
+      "max_price": 100000.0,
+      "total_stock": 12.0
+    },
+    {
+      "id": "prod_1788882796664",
+      "name": "Matting Doff",
+      "category_id": "cat_1788882759162",
+      "category_name": "Obat Doff",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "1/4",
+          "price": 30000.0,
+          "stock": 4.0,
+          "sku": "OTC-OBDO-081"
+        }
+      ],
+      "min_price": 30000.0,
+      "max_price": 30000.0,
+      "total_stock": 4.0
+    },
+    {
+      "id": "prod_1788883114709",
+      "name": "Hammertone",
+      "category_id": "cat_1788882882553",
+      "category_name": "Hammertone",
+      "brand_name": "Polibest",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "Hitam(Kg)",
+          "price": 85000.0,
+          "stock": 6.0,
+          "sku": "OTC-HAM-082"
+        },
+        {
+          "name": "Grey (Kg)",
+          "price": 85000.0,
+          "stock": 6.0,
+          "sku": "OTC-HAM-083"
+        }
+      ],
+      "min_price": 85000.0,
+      "max_price": 85000.0,
+      "total_stock": 12.0
+    },
+    {
+      "id": "prod_1788883234343",
+      "name": "Flinkote Polibest",
+      "category_id": "cat_1788883149878",
+      "category_name": "Flinkote",
+      "brand_name": "Polibest",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "Hitam (Kg)",
+          "price": 40000.0,
+          "stock": 11.0,
+          "sku": "OTC-FLI-084"
+        }
+      ],
+      "min_price": 40000.0,
+      "max_price": 40000.0,
+      "total_stock": 11.0
+    },
+    {
+      "id": "prod_1789052666488",
+      "name": "Kuas",
+      "category_id": "cat_1789050982321",
+      "category_name": "Kuas",
+      "brand_name": "Eterna",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "1,5 in",
+          "price": 12000.0,
+          "stock": 2.0,
+          "sku": "OTC-KUA-085"
+        },
+        {
+          "name": "2",
+          "price": 15000.0,
+          "stock": 9.0,
+          "sku": "OTC-KUA-086"
+        },
+        {
+          "name": "2,5",
+          "price": 16000.0,
+          "stock": 10.0,
+          "sku": "OTC-KUA-087"
+        }
+      ],
+      "min_price": 12000.0,
+      "max_price": 16000.0,
+      "total_stock": 21.0
+    },
+    {
+      "id": "prod_1789053147518",
+      "name": "Kape/Skrap Dempul",
+      "category_id": "cat_1787955008877",
+      "category_name": "Dempul",
+      "brand_name": "Camel",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "Camel Set",
+          "price": 20000.0,
+          "stock": 5.0,
+          "sku": "OTC-DEM-088"
+        },
+        {
+          "name": "Miami 2 in",
+          "price": 10000.0,
+          "stock": 2.0,
+          "sku": "OTC-DEM-089"
+        },
+        {
+          "name": "Miami 2,5 in",
+          "price": 12000.0,
+          "stock": 3.0,
+          "sku": "OTC-DEM-090"
+        },
+        {
+          "name": "Miami  3 in",
+          "price": 13000.0,
+          "stock": 3.0,
+          "sku": "OTC-DEM-091"
+        },
+        {
+          "name": "Miami 4  in",
+          "price": 14000.0,
+          "stock": 3.0,
+          "sku": "OTC-DEM-092"
+        }
+      ],
+      "min_price": 10000.0,
+      "max_price": 20000.0,
+      "total_stock": 16.0
+    },
+    {
+      "id": "prod_1789053863424",
+      "name": "Busa & Kain poles",
+      "category_id": "cat_1788881551106",
+      "category_name": "Coumpond",
+      "brand_name": "Standar Toko",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "Flat 5 in",
+          "price": 10000.0,
+          "stock": 6.0,
+          "sku": "OTC-COU-093"
+        },
+        {
+          "name": "Gelombang 5 in",
+          "price": 10000.0,
+          "stock": 10.0,
+          "sku": "OTC-COU-094"
+        },
+        {
+          "name": "Piringan+Wol+Baut",
+          "price": 15000.0,
+          "stock": 0.0,
+          "sku": "OTC-COU-095"
+        },
+        {
+          "name": "Kain Poles",
+          "price": 13000.0,
+          "stock": 0.0,
+          "sku": "OTC-COU-096"
+        }
+      ],
+      "min_price": 10000.0,
+      "max_price": 15000.0,
+      "total_stock": 16.0
+    },
+    {
+      "id": "prod_1789054053193",
+      "name": "Koran",
+      "category_id": "cat_1789053916426",
+      "category_name": "Koran",
+      "brand_name": "Standar Toko",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "1/2",
+          "price": 7000.0,
+          "stock": 7.0,
+          "sku": "OTC-KOR-097"
+        },
+        {
+          "name": "Kg",
+          "price": 14000.0,
+          "stock": 9.0,
+          "sku": "OTC-KOR-098"
+        }
+      ],
+      "min_price": 7000.0,
+      "max_price": 14000.0,
+      "total_stock": 16.0
+    },
+    {
+      "id": "prod_1789348436826",
+      "name": "candy Nc",
+      "category_id": "cat_1788748806953",
+      "category_name": "Cat",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "Candy blue Kg",
+          "price": 115000.0,
+          "stock": 6.0,
+          "sku": "CAT-CANC-CAND"
+        },
+        {
+          "name": "Candy Fire Red",
+          "price": 115000.0,
+          "stock": 3.0,
+          "sku": "CAT-CANC-CAND-01"
+        },
+        {
+          "name": "Candy Yellow",
+          "price": 115000.0,
+          "stock": 3.0,
+          "sku": "CAT-CANC-CAND-02"
+        },
+        {
+          "name": "Candy Green",
+          "price": 115000.0,
+          "stock": 2.0,
+          "sku": "CAT-CANC-CAND-03"
+        },
+        {
+          "name": "Candy Pink",
+          "price": 115000.0,
+          "stock": 3.0,
+          "sku": "CAT-CANC-CAND-04"
+        },
+        {
+          "name": "Candy blue 1/4",
+          "price": 35000.0,
+          "stock": 1.0,
+          "sku": "CAT-CANC-CAND-05"
+        },
+        {
+          "name": "Candy fire red 1/4",
+          "price": 35000.0,
+          "stock": 0.429,
+          "sku": "CAT-CANC-CAND-06"
+        },
+        {
+          "name": "Candy yellow",
+          "price": 35000.0,
+          "stock": 0.0,
+          "sku": "CAT-CANC-CAND-07"
+        },
+        {
+          "name": "Candy Green 1/4",
+          "price": 35000.0,
+          "stock": 0.0,
+          "sku": "CAT-CANC-CAND-08"
+        },
+        {
+          "name": "Candy Pink 1/4",
+          "price": 35000.0,
+          "stock": 0.0,
+          "sku": "CAT-CANC-CAND-09"
+        }
+      ],
+      "min_price": 35000.0,
+      "max_price": 115000.0,
+      "total_stock": 18.429
+    },
+    {
+      "id": "prod_1789349452029",
+      "name": "Solasi Kertas",
+      "category_id": "cat_1787955008877",
+      "category_name": "Dempul",
+      "brand_name": "Nashua",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "Solasi Kertas",
+          "price": 13000.0,
+          "stock": 31.0,
+          "sku": "OTC-DEM-109"
+        }
+      ],
+      "min_price": 13000.0,
+      "max_price": 13000.0,
+      "total_stock": 31.0
+    },
+    {
+      "id": "prod_1789371487426",
+      "name": "Cat hijau Std",
+      "category_id": "cat_1788748806953",
+      "category_name": "Cat",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_cat_hijau_std_487426.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Leaf Green",
+          "price": 110000.0,
+          "stock": 2.0,
+          "sku": "CAT-CHS-LEAF"
+        },
+        {
+          "name": "Dark Green",
+          "price": 110000.0,
+          "stock": 3.0,
+          "sku": "CAT-CHS-DARK"
+        },
+        {
+          "name": "Hino Green",
+          "price": 110000.0,
+          "stock": 2.0,
+          "sku": "CAT-CHS-HINO"
+        },
+        {
+          "name": "Dark Green",
+          "price": 30000.0,
+          "stock": 1.0,
+          "sku": "CAT-CHS-DARK-01"
+        },
+        {
+          "name": "Leaf Green",
+          "price": 30000.0,
+          "stock": 3.0,
+          "sku": "CAT-CHS-LEAF-01"
+        }
+      ],
+      "min_price": 30000.0,
+      "max_price": 110000.0,
+      "total_stock": 11.0
+    },
+    {
+      "id": "prod_1789373071307",
+      "name": "Cat Kuning Std",
+      "category_id": "cat_1788748806953",
+      "category_name": "Cat",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_cat_kuning_std_071307.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Yellow Canter",
+          "price": 110000.0,
+          "stock": 1.0,
+          "sku": "SKU-1789373071308-0"
+        },
+        {
+          "name": "Lemon Yellow",
+          "price": 110000.0,
+          "stock": 5.0,
+          "sku": "SKU-1789373071308-1"
+        },
+        {
+          "name": "Dark chrome Yellow",
+          "price": 110000.0,
+          "stock": 3.0,
+          "sku": "SKU-1789373071308-2"
+        },
+        {
+          "name": "Lemon Yellow 1/4",
+          "price": 30000.0,
+          "stock": 4.0,
+          "sku": "SKU-1789373071308-3"
+        }
+      ],
+      "min_price": 30000.0,
+      "max_price": 110000.0,
+      "total_stock": 13.0
+    },
+    {
+      "id": "prod_1789374049145",
+      "name": "Cat Abu-abu",
+      "category_id": "cat_1788748806953",
+      "category_name": "Cat",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_cat_abu_abu_049145.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Light Grey",
+          "price": 110000.0,
+          "stock": 4.0,
+          "sku": "SKU-1789374049145-0"
+        }
+      ],
+      "min_price": 110000.0,
+      "max_price": 110000.0,
+      "total_stock": 4.0
+    },
+    {
+      "id": "prod_1789374168914",
+      "name": "Cat Coklat",
+      "category_id": "cat_1788748806953",
+      "category_name": "Cat",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_cat_coklat_168914.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Coklat muda",
+          "price": 110000.0,
+          "stock": 7.0,
+          "sku": "SKU-1789374168914-0"
+        },
+        {
+          "name": "Madoras Brown",
+          "price": 110000.0,
+          "stock": 7.0,
+          "sku": "SKU-1789374168914-1"
+        },
+        {
+          "name": "Coklat muda",
+          "price": 30000.0,
+          "stock": 3.0,
+          "sku": "SKU-1789374168914-0-COPY"
+        }
+      ],
+      "min_price": 30000.0,
+      "max_price": 110000.0,
+      "total_stock": 17.0
+    },
+    {
+      "id": "prod_1789374397006",
+      "name": "Cat Biru",
+      "category_id": "cat_1788748806953",
+      "category_name": "Cat",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_cat_biru_397006.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "S.Blue",
+          "price": 110000.0,
+          "stock": 2.0,
+          "sku": "CAT-CABI-SBLU"
+        },
+        {
+          "name": "Tosca",
+          "price": 110000.0,
+          "stock": 1.0,
+          "sku": "CAT-CABI-TOSC"
+        },
+        {
+          "name": "Indigo Blue",
+          "price": 110000.0,
+          "stock": 2.0,
+          "sku": "CAT-CABI-INDI"
+        },
+        {
+          "name": "Atlantis Blue",
+          "price": 110000.0,
+          "stock": 2.0,
+          "sku": "CAT-CABI-ATLA"
+        },
+        {
+          "name": "Telkom Blue",
+          "price": 110000.0,
+          "stock": 2.0,
+          "sku": "CAT-CABI-TELK"
+        },
+        {
+          "name": "monster blue",
+          "price": 30000.0,
+          "stock": 0.0,
+          "sku": "CAT-CABI-SBLU-COPY"
+        }
+      ],
+      "min_price": 30000.0,
+      "max_price": 110000.0,
+      "total_stock": 9.0
+    },
+    {
+      "id": "prod_1789374597258",
+      "name": "Cat Cream",
+      "category_id": "cat_1788748806953",
+      "category_name": "Cat",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_cat_cream_597258.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Vita ream",
+          "price": 110000.0,
+          "stock": 3.0,
+          "sku": "SKU-1789374597259-0"
+        }
+      ],
+      "min_price": 110000.0,
+      "max_price": 110000.0,
+      "total_stock": 3.0
+    },
+    {
+      "id": "prod_1789377677777",
+      "name": "Cat Oranye",
+      "category_id": "cat_1788748806953",
+      "category_name": "Cat",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_cat_oranye_677777.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "International Orange",
+          "price": 110000.0,
+          "stock": 1.0,
+          "sku": "DEM-1100-INTE"
+        },
+        {
+          "name": "Sephia Orange",
+          "price": 110000.0,
+          "stock": 3.0,
+          "sku": "DEM-1100-SEPH"
+        },
+        {
+          "name": "Nice Orange",
+          "price": 110000.0,
+          "stock": 1.0,
+          "sku": "DEM-1100-NICE"
+        }
+      ],
+      "min_price": 110000.0,
+      "max_price": 110000.0,
+      "total_stock": 5.0
+    },
+    {
+      "id": "prod_1789464795901",
+      "name": "Premium Clear",
+      "category_id": "cat_1788748113660",
+      "category_name": "clear/pernish",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_premium_clear_795901.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Kg",
+          "price": 300000.0,
+          "stock": 1.0,
+          "sku": "CLE-PRCL-KG"
+        }
+      ],
+      "min_price": 300000.0,
+      "max_price": 300000.0,
+      "total_stock": 1.0
+    },
+    {
+      "id": "prod_1789537316914",
+      "name": "Paint Remover",
+      "category_id": "cat_1789537180919",
+      "category_name": "Remover",
+      "brand_name": "Polibest",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "Kg",
+          "price": 65000.0,
+          "stock": 0.0,
+          "sku": "SKU-1789537316915-0"
+        },
+        {
+          "name": "1/4",
+          "price": 25000.0,
+          "stock": 31.0,
+          "sku": "SKU-1789537316915-1"
+        }
+      ],
+      "min_price": 25000.0,
+      "max_price": 65000.0,
+      "total_stock": 31.0
+    },
+    {
+      "id": "prod_1789558155004",
+      "name": "Cat Hornet  Gln (Std)",
+      "category_id": "cat_1788748806953",
+      "category_name": "Cat",
+      "brand_name": "Hornet",
+      "description": "",
+      "image": "uploads/prod_cat_hornet__gln__std__155004.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Black doff",
+          "price": 440000.0,
+          "stock": 2.0,
+          "sku": "OTC-CAT-019-CPY"
+        },
+        {
+          "name": "Super Black",
+          "price": 440000.0,
+          "stock": 1.0,
+          "sku": "OTC-CAT-020-CPY"
+        },
+        {
+          "name": "Super White",
+          "price": 440000.0,
+          "stock": 1.0,
+          "sku": "OTC-CAT-021-CPY"
+        },
+        {
+          "name": "Silver",
+          "price": 440000.0,
+          "stock": 1.0,
+          "sku": "OTC-CAT-022-CPY"
+        }
+      ],
+      "min_price": 440000.0,
+      "max_price": 440000.0,
+      "total_stock": 5.0
+    },
+    {
+      "id": "prod_1789558966318",
+      "name": "Kaleng",
+      "category_id": "cat_1789558889177",
+      "category_name": "Kaleng",
+      "brand_name": "Standar Toko",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "1/4",
+          "price": 3000.0,
+          "stock": 100.0,
+          "sku": "SKU-1789558966321-0"
+        }
+      ],
+      "min_price": 3000.0,
+      "max_price": 3000.0,
+      "total_stock": 100.0
+    },
+    {
+      "id": "prod_1789693475273",
+      "name": "Cat Pink",
+      "category_id": "cat_1788748806953",
+      "category_name": "Cat",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_cat_pink_475273.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Monster Pink",
+          "price": 115000.0,
+          "stock": 1.0,
+          "sku": "CAT-CAPI-MONS"
+        },
+        {
+          "name": "Lady Pink",
+          "price": 115000.0,
+          "stock": 1.0,
+          "sku": "CAT-CAPI-LADY"
+        }
+      ],
+      "min_price": 115000.0,
+      "max_price": 115000.0,
+      "total_stock": 2.0
+    },
+    {
+      "id": "prod_1789716618894",
+      "name": "Pro Choice HS",
+      "category_id": "cat_1788748113660",
+      "category_name": "clear/pernish",
+      "brand_name": "Alfagloss",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "Kg",
+          "price": 250000.0,
+          "stock": 3.0,
+          "sku": "SKU-1789716618895-0"
+        }
+      ],
+      "min_price": 250000.0,
+      "max_price": 250000.0,
+      "total_stock": 3.0
+    },
+    {
+      "id": "prod_1790412787608",
+      "name": "Clear doff",
+      "category_id": "cat_1788748113660",
+      "category_name": "clear/pernish",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_clear_doff_787608.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Doff (Kg)",
+          "price": 145000.0,
+          "stock": 0.0,
+          "sku": "OTC-CLE-042-CPY"
+        },
+        {
+          "name": "Doff (1/4)",
+          "price": 40000.0,
+          "stock": 3.0,
+          "sku": "OTC-CLE-044-CPY"
+        }
+      ],
+      "min_price": 40000.0,
+      "max_price": 145000.0,
+      "total_stock": 3.0
+    },
+    {
+      "id": "prod_1790492538803",
+      "name": "Lembayung",
+      "category_id": "cat_1790492459565",
+      "category_name": "Lembayung",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "pearl violet",
+          "price": 25000.0,
+          "stock": 4.0,
+          "sku": "SKU-1790492538803-0"
+        }
+      ],
+      "min_price": 25000.0,
+      "max_price": 25000.0,
+      "total_stock": 4.0
+    },
+    {
+      "id": "prod_1790570288707",
+      "name": "amplas gerinda",
+      "category_id": "cat_1788863201650",
+      "category_name": "Amplas",
+      "brand_name": "Standar Toko",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "Kecil",
+          "price": 3000.0,
+          "stock": 8.0,
+          "sku": "SKU-1790570288707-0"
+        }
+      ],
+      "min_price": 3000.0,
+      "max_price": 3000.0,
+      "total_stock": 8.0
+    },
+    {
+      "id": "prod_1790672129361",
+      "name": "Cat Merah",
+      "category_id": "cat_1788748806953",
+      "category_name": "Cat",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_cat_merah_129361.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Red Ferrari",
+          "price": 115000.0,
+          "stock": 2.0,
+          "sku": "CAT-CAME-REDF"
+        },
+        {
+          "name": "Red Ferrari 1/4",
+          "price": 35000.0,
+          "stock": 7.0,
+          "sku": "CAT-CAME-REDF-01"
+        },
+        {
+          "name": "Flag Red",
+          "price": 115000.0,
+          "stock": 2.0,
+          "sku": "CAT-CAME-FLAG"
+        },
+        {
+          "name": "Dunhill Red",
+          "price": 115000.0,
+          "stock": 3.0,
+          "sku": "CAT-CAME-DUNH"
+        },
+        {
+          "name": "Rally red",
+          "price": 115000.0,
+          "stock": 1.0,
+          "sku": "CAT-CAME-RALL"
+        },
+        {
+          "name": "Signal Red",
+          "price": 115000.0,
+          "stock": 1.0,
+          "sku": "CAT-CAME-SIGN"
+        },
+        {
+          "name": "Red Canter",
+          "price": 115000.0,
+          "stock": 1.0,
+          "sku": "CAT-CAME-REDC"
+        }
+      ],
+      "min_price": 35000.0,
+      "max_price": 115000.0,
+      "total_stock": 17.0
+    },
+    {
+      "id": "prod_1791103508292",
+      "name": "109S",
+      "category_id": "cat_1787957687285",
+      "category_name": "Thinner",
+      "brand_name": "Monster Thinner",
+      "description": "",
+      "image": "",
+      "active": true,
+      "variants": [
+        {
+          "name": "Kg",
+          "price": 55000.0,
+          "stock": 3.0,
+          "sku": "SKU-1791103508292-0"
+        }
+      ],
+      "min_price": 55000.0,
+      "max_price": 55000.0,
+      "total_stock": 3.0
+    },
+    {
+      "id": "prod_1791645134080",
+      "name": "Cat Dumons Metalic",
+      "category_id": "cat_1788748806953",
+      "category_name": "Cat",
+      "brand_name": "Dumons",
+      "description": "",
+      "image": "uploads/prod_cat_dumons_metalic_134080.jpg",
+      "active": true,
+      "variants": [
+        {
+          "name": "Jet Black",
+          "price": 150000.0,
+          "stock": 2.0,
+          "sku": "DEM-1100-INTE-CPY"
+        },
+        {
+          "name": "Tembaga Met",
+          "price": 135000.0,
+          "stock": 2.0,
+          "sku": "DEM-1100-INTE-CPY-COPY"
+        },
+        {
+          "name": "Wf Brilian Gold",
+          "price": 135000.0,
+          "stock": 3.0,
+          "sku": "DEM-1100-INTE-CPY-COPY-COPY"
+        },
+        {
+          "name": "Gold Met RCB",
+          "price": 135000.0,
+          "stock": 2.0,
+          "sku": "DEM-1100-INTE-CPY-COPY-COPY-COPY"
+        },
+        {
+          "name": "Magenta",
+          "price": 135000.0,
+          "stock": 1.0,
+          "sku": "DEM-1100-INTE-CPY-COPY-COPY-COPY-COPY"
+        }
+      ],
+      "min_price": 135000.0,
+      "max_price": 150000.0,
+      "total_stock": 10.0
+    }
+  ]
+}

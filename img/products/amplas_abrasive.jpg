@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="amplasBg" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <linearGradient id="sandpaper" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="50%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="20" fill="url(#amplasBg)"/>
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="336" rx="100" ry="16" fill="#000000" opacity="0.5"/>
+
+  <!-- Sandpaper Sheet Stack -->
+  <rect x="110" y="110" width="180" height="210" rx="6" fill="#334155" stroke="#64748b" stroke-width="2" transform="rotate(-6 200 200)"/>
+  <rect x="110" y="110" width="180" height="210" rx="6" fill="url(#sandpaper)" stroke="#b45309" stroke-width="2" transform="rotate(3 200 200)"/>
+
+  <!-- Grit Text on Sandpaper -->
+  <g transform="rotate(3 200 200)">
+    <text x="200" y="180" font-family="'Outfit', sans-serif" font-weight="900" font-size="28" fill="#fde68a" text-anchor="middle">WATERPROOF</text>
+    <text x="200" y="215" font-family="'Outfit', sans-serif" font-weight="900" font-size="34" fill="#ffffff" text-anchor="middle">SILICON CARBIDE</text>
+    <rect x="150" y="235" width="100" height="30" rx="6" fill="#0f172a"/>
+    <text x="200" y="256" font-family="'Outfit', sans-serif" font-weight="900" font-size="18" fill="#f59e0b" text-anchor="middle">GRIT #1000 - #2000</text>
+  </g>
+</svg>

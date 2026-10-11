@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="clearBg" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#090518"/>
+    </radialGradient>
+    <linearGradient id="canMetalBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="35%" stop-color="#3b82f6"/>
+      <stop offset="65%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#172554"/>
+    </linearGradient>
+    <linearGradient id="hardenerCan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="50%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="20" fill="url(#clearBg)"/>
+  <circle cx="180" cy="200" r="140" fill="#3b82f6" opacity="0.15" filter="blur(30px)"/>
+
+  <!-- Shadows -->
+  <ellipse cx="170" cy="336" rx="80" ry="14" fill="#000000" opacity="0.5"/>
+  <ellipse cx="280" cy="336" rx="40" ry="10" fill="#000000" opacity="0.4"/>
+
+  <!-- Main Clear Coat Can (1 Liter) -->
+  <rect x="100" y="115" width="140" height="210" rx="14" fill="url(#canMetalBlue)" stroke="#93c5fd" stroke-width="2"/>
+  <rect x="145" y="95" width="50" height="22" rx="4" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.5"/>
+
+  <!-- Wet-Look Gloss Reflection Sheen -->
+  <path d="M110 125 Q140 180 115 310" stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity="0.3" fill="none"/>
+
+  <!-- Label -->
+  <rect x="108" y="155" width="124" height="135" rx="6" fill="#0b1120"/>
+  <text x="170" y="180" font-family="'Outfit', sans-serif" font-weight="900" font-size="14" fill="#60a5fa" text-anchor="middle" letter-spacing="1">CLEAR COAT</text>
+  <text x="170" y="206" font-family="'Outfit', sans-serif" font-weight="900" font-size="24" fill="#ffffff" text-anchor="middle" letter-spacing="2">2K WET LOOK</text>
+  <rect x="120" y="216" width="100" height="16" rx="8" fill="#2563eb"/>
+  <text x="170" y="228" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="9" fill="#ffffff" text-anchor="middle">HIGH SOLID POLYURETHANE</text>
+  <text x="170" y="250" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="9.5" fill="#facc15" text-anchor="middle">&starf; KILAP KACA CERMIN &starf;</text>
+  <text x="170" y="270" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="8.5" fill="#94a3b8" text-anchor="middle">ANTI GORES &bull; UV RESISTANT</text>
+
+  <!-- Hardener Smaller Can (0.5 Liter) -->
+  <rect x="250" y="170" width="60" height="155" rx="8" fill="url(#hardenerCan)" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="268" y="154" width="24" height="18" rx="3" fill="#64748b"/>
+  <rect x="254" y="200" width="52" height="90" rx="4" fill="#0f172a"/>
+  <text x="280" y="222" font-family="'Outfit', sans-serif" font-weight="800" font-size="9" fill="#facc15" text-anchor="middle">HARDENER</text>
+  <text x="280" y="240" font-family="'Outfit', sans-serif" font-weight="900" font-size="14" fill="#ffffff" text-anchor="middle">2K</text>
+</svg>

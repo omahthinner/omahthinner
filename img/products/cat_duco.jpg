@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="catBg" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <linearGradient id="splashGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="50%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="catCan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="35%" stop-color="#475569"/>
+      <stop offset="65%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="20" fill="url(#catBg)"/>
+
+  <!-- Paint Splash / Drip Background Graphic -->
+  <path d="M70 120 Q120 70 200 90 T330 110 Q360 170 330 220 Q290 280 200 290 Q120 280 80 220 Z" fill="url(#splashGrad)" opacity="0.25" filter="blur(20px)"/>
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="336" rx="90" ry="14" fill="#000000" opacity="0.5"/>
+
+  <!-- Paint Can -->
+  <rect x="120" y="110" width="160" height="215" rx="14" fill="url(#catCan)" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="165" y="90" width="70" height="22" rx="4" fill="#94a3b8" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Paint Drip Accent -->
+  <path d="M120 160 Q150 190 180 160 T240 185 T280 155 L280 110 L120 110 Z" fill="url(#splashGrad)"/>
+
+  <!-- Label -->
+  <rect x="130" y="175" width="140" height="120" rx="6" fill="#0b1120"/>
+  <text x="200" y="202" font-family="'Outfit', sans-serif" font-weight="900" font-size="16" fill="#f97316" text-anchor="middle" letter-spacing="1.5">CAT DUCO</text>
+  <text x="200" y="226" font-family="'Outfit', sans-serif" font-weight="900" font-size="20" fill="#ffffff" text-anchor="middle" letter-spacing="1">AUTO REFINISH</text>
+  <rect x="145" y="236" width="110" height="18" rx="9" fill="#ea580c"/>
+  <text x="200" y="249" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="9" fill="#ffffff" text-anchor="middle">WARNA SOLID &amp; METALIK</text>
+  <text x="200" y="270" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="9" fill="#94a3b8" text-anchor="middle">DAYA TUTUP TINGGI &bull; PRESISI</text>
+</svg>
