@@ -585,7 +585,7 @@
        1. HERO SECTION (BERANDA - LANDSCAPE & ANIMATED)
     ========================================================= */
     #beranda {
-      padding-top: 88px;
+      padding-top: 80px;
       padding-bottom: 90px;
       background: radial-gradient(circle at 50% 20%, rgba(242, 90, 5, 0.12) 0%, transparent 65%);
       position: relative;
@@ -775,12 +775,12 @@
     }
 
     /* =========================================================
-       LANDSCAPE ANIMATED SHOWCASE (FULL DISPLAY & BERGERAK)
+       LANDSCAPE ANIMATED SHOWCASE (FULL VIEWPORT 100VH CINEMATIC DESKTOP)
     ========================================================= */
     .hero-fullwidth-wrapper {
       position: relative;
       width: 100%;
-      margin: 0 0 28px 0;
+      margin: 0 0 42px 0;
       padding: 0;
       background: #090D16;
     }
@@ -788,9 +788,9 @@
     .hero-landscape-carousel {
       position: relative;
       width: 100%;
-      height: clamp(640px, 78vh, 880px);
-      min-height: 640px;
-      max-height: 880px;
+      height: calc(100vh - 80px);
+      min-height: 680px;
+      max-height: 1080px;
       border-radius: 0;
       overflow: hidden;
       border-top: none;
