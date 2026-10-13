@@ -618,17 +618,17 @@
 
     .hero-header-grid {
       display: grid;
-      grid-template-columns: 1fr 1.08fr;
+      grid-template-columns: 1.22fr 0.78fr;
       align-items: center;
-      gap: clamp(48px, 4vw, 72px);
+      gap: clamp(48px, 5vw, 80px);
       margin-top: 60px;
-      margin-bottom: 60px;
+      margin-bottom: 56px;
       position: relative;
       z-index: 1;
     }
 
     .hero-tagline {
-      font-size: clamp(2.6rem, 4vw, 3.8rem);
+      font-size: clamp(2.6rem, 4.2vw, 3.8rem);
       font-weight: 800;
       line-height: 1.14;
       letter-spacing: -0.03em;
@@ -719,121 +719,60 @@
       gap: 16px;
     }
 
-    /* Hero Value Cards (Grid 2x2 Megah & Penuh Ruang Layar Desktop) */
+    /* Hero Value Cards (Kolom Kanan Header) Diperbesar & Diperluas */
     .hero-value-cards {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      flex-direction: column;
       gap: 18px;
     }
 
     .hero-vcard {
       display: flex;
-      flex-direction: column;
-      gap: 14px;
-      padding: 24px;
-      background: rgba(16, 23, 38, 0.78);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
+      align-items: center;
+      gap: 20px;
+      padding: 22px 26px;
+      background: rgba(16, 23, 38, 0.75);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
       border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 20px;
-      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-      position: relative;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    }
-
-    .hero-vcard::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      background: linear-gradient(90deg, transparent, rgba(242, 90, 5, 0.6), transparent);
-      opacity: 0;
-      transition: opacity 0.3s ease;
+      border-radius: 18px;
+      transition: all 0.3s ease;
     }
 
     .hero-vcard:hover {
-      border-color: rgba(242, 90, 5, 0.55);
-      background: rgba(21, 31, 51, 0.95);
-      transform: translateY(-4px);
-      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(242, 90, 5, 0.15);
-    }
-
-    .hero-vcard:hover::before {
-      opacity: 1;
+      border-color: rgba(242, 90, 5, 0.5);
+      background: rgba(21, 31, 51, 0.92);
+      transform: translateX(6px);
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.45);
     }
 
     .hero-vcard-icon {
-      width: 52px;
-      height: 52px;
-      border-radius: 14px;
+      width: 56px;
+      height: 56px;
+      border-radius: 16px;
       background: rgba(242, 90, 5, 0.16);
       border: 1px solid rgba(242, 90, 5, 0.35);
       color: var(--primary);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.6rem;
+      font-size: 1.7rem;
       flex-shrink: 0;
     }
 
-    .hero-vcard-text {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    .hero-vcard-header {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
     .hero-vcard-text strong {
-      font-size: 1.15rem;
+      display: block;
+      font-size: 1.18rem;
       font-weight: 800;
       color: #FFFFFF;
-      line-height: 1.25;
+      margin-bottom: 4px;
     }
 
-    .hero-vcard-text p {
-      font-size: 0.9rem;
-      color: #94A3B8;
-      line-height: 1.55;
-      margin: 0;
-    }
-
-    .vcard-badge {
-      font-size: 0.72rem;
-      font-weight: 700;
-      padding: 3px 9px;
-      border-radius: 999px;
-      background: rgba(242, 90, 5, 0.18);
-      color: #FF994D;
-      border: 1px solid rgba(242, 90, 5, 0.35);
-      white-space: nowrap;
-    }
-
-    .vcard-badge.badge-purity {
-      background: rgba(16, 185, 129, 0.18);
-      color: #34D399;
-      border-color: rgba(16, 185, 129, 0.35);
-    }
-
-    .vcard-badge.badge-stock {
-      background: rgba(56, 189, 248, 0.18);
-      color: #38BDF8;
-      border-color: rgba(56, 189, 248, 0.35);
-    }
-
-    .vcard-badge.badge-service {
-      background: rgba(168, 85, 247, 0.18);
-      color: #C084FC;
-      border-color: rgba(168, 85, 247, 0.35);
+    .hero-vcard-text span {
+      display: block;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.45;
     }
 
     /* =========================================================
@@ -3065,9 +3004,6 @@
         hyphens: auto;
         word-break: normal;
       }
-      .hero-value-cards {
-        grid-template-columns: 1fr;
-      }
       .hero-value-bar {
         grid-template-columns: 1fr;
       }
@@ -3655,18 +3591,15 @@
           </div>
         </div>
 
-        <!-- Kolom Fitur Unggulan Beranda (Megah, Luas & Memaksimalkan Space Layar) -->
+        <!-- Kolom Value Cards Minimalis -->
         <div class="hero-value-cards">
           <div class="hero-vcard">
             <div class="hero-vcard-icon">
               <i class="ri-price-tag-3-line"></i>
             </div>
             <div class="hero-vcard-text">
-              <div class="hero-vcard-header">
-                <strong>Harga Hemat Bersahabat</strong>
-                <span class="vcard-badge">Eceran & Grosir</span>
-              </div>
-              <p>Melayani pembelian eceran perorangan, reseller, hingga kontrak pasokan rutin bengkel body repair & mebel.</p>
+              <strong>Harga Hemat Bersahabat</strong>
+              <span>Melayani eceran perorangan & grosir rekanan bengkel</span>
             </div>
           </div>
 
@@ -3675,11 +3608,8 @@
               <i class="ri-drop-line"></i>
             </div>
             <div class="hero-vcard-text">
-              <div class="hero-vcard-header">
-                <strong>100% Thinner Mutu Murni</strong>
-                <span class="vcard-badge badge-purity">Tanpa Campuran</span>
-              </div>
-              <p>Kemurnian grade tinggi dari ND, HG, Super HG, hingga Monster PU. Pelarutan sempurna tanpa merusak kilap cat.</p>
+              <strong>100% Thinner Mutu Murni</strong>
+              <span>Kualitas murni tanpa campuran perusak kilap & cat</span>
             </div>
           </div>
 
@@ -3688,24 +3618,8 @@
               <i class="ri-archive-stack-line"></i>
             </div>
             <div class="hero-vcard-text">
-              <div class="hero-vcard-header">
-                <strong id="statTotalProducts">64+ Produk Siap Kirim</strong>
-                <span class="vcard-badge badge-stock">Ready Stock</span>
-              </div>
-              <p>Inventori terlengkap di Suruh: thinner, dempul bodi, cat mobil/motor, epoxy 2K, clear coat, amplas, hingga wood stain.</p>
-            </div>
-          </div>
-
-          <div class="hero-vcard">
-            <div class="hero-vcard-icon">
-              <i class="ri-customer-service-2-line"></i>
-            </div>
-            <div class="hero-vcard-text">
-              <div class="hero-vcard-header">
-                <strong>Konsultasi & Layanan Cepat</strong>
-                <span class="vcard-badge badge-service">Respon Ramah</span>
-              </div>
-              <p>Gratis konsultasi perbandingan racikan thinner, pemilihan jenis clear coat, serta panduan tahapan pengerjaan cat & kayu.</p>
+              <strong id="statTotalProducts">64+ Produk Siap Kirim</strong>
+              <span>Inventori lengkap thinner, cat, epoxy, clear & dempul</span>
             </div>
           </div>
         </div>
