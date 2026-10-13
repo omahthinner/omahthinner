@@ -817,26 +817,29 @@
       height: 100%;
       opacity: 0;
       visibility: hidden;
-      transition: opacity 0.9s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.9s;
+      transition: opacity 0.85s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.85s;
       z-index: 1;
+      will-change: opacity;
+      pointer-events: none;
     }
 
     .hero-slide.active {
       opacity: 1;
       visibility: visible;
       z-index: 2;
+      pointer-events: auto;
     }
 
     /* ANIMASI BERGERAK (KEN BURNS EFFECT CINEMATIC PAN & SLOW ZOOM) */
     @keyframes kenBurnsLandscape {
       0% {
-        transform: scale(1) translate(0%, 0%);
+        transform: scale(1) translate3d(0%, 0%, 0);
       }
       50% {
-        transform: scale(1.09) translate(-1.5%, -1%);
+        transform: scale(1.08) translate3d(-1.5%, -1%, 0);
       }
       100% {
-        transform: scale(1.04) translate(1.2%, 0.6%);
+        transform: scale(1.04) translate3d(1.2%, 0.6%, 0);
       }
     }
 
@@ -847,6 +850,10 @@
       object-position: center;
       display: block;
       transform-origin: center center;
+      will-change: transform;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      transform: translateZ(0);
     }
 
     .hero-slide.active .hero-slide-img {
@@ -866,10 +873,10 @@
     /* Floating Micro-Badge Top-Right (Animated Float) */
     @keyframes floatBadge {
       0%, 100% {
-        transform: translateY(0);
+        transform: translate3d(0, 0, 0);
       }
       50% {
-        transform: translateY(-6px);
+        transform: translate3d(0, -6px, 0);
       }
     }
 
@@ -892,6 +899,8 @@
       font-weight: 700;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
       animation: floatBadge 4s ease-in-out infinite;
+      will-change: transform;
+      transform: translateZ(0);
     }
 
     .hero-live-indicator {
@@ -2213,20 +2222,22 @@
       transform: translateY(-3px);
     }
 
-    /* Animasi muncul produk yang halus */
+    /* Animasi muncul produk yang halus & akselerasi hardware */
     @keyframes productFadeInUp {
       from {
         opacity: 0;
-        transform: translateY(16px);
+        transform: translate3d(0, 16px, 0);
       }
       to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translate3d(0, 0, 0);
       }
     }
 
     .product-card {
-      animation: productFadeInUp 0.35s ease backwards;
+      animation: productFadeInUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+      will-change: transform, box-shadow;
+      transform: translateZ(0);
     }
 
     /* =========================================================
@@ -2616,6 +2627,7 @@
       bottom: 0;
       background: rgba(0, 0, 0, 0.75);
       backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
       z-index: 200;
       display: flex;
       align-items: center;
@@ -2623,7 +2635,7 @@
       padding: 20px;
       opacity: 0;
       pointer-events: none;
-      transition: opacity 0.25s ease;
+      transition: opacity 0.28s ease;
     }
 
     .modal-backdrop.open {
@@ -2642,6 +2654,13 @@
       padding: 32px;
       position: relative;
       box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+      transform: scale(0.94) translate3d(0, 16px, 0);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.28s ease;
+      will-change: transform, opacity;
+    }
+
+    .modal-backdrop.open .modal-box {
+      transform: scale(1) translate3d(0, 0, 0);
     }
 
     .modal-close {
@@ -3280,6 +3299,21 @@
         display: none;
       }
     }
+
+    /* ========================================================
+       PERFORMANCE & ACCESSIBILITY OPTIMIZATION (60/120 FPS)
+       ======================================================== */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .hero-slide.active .hero-slide-img {
+        animation: none !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -3401,7 +3435,7 @@
         <div class="hero-carousel-track">
           <!-- Slide 1: Bengkel & Toko Resmi -->
           <div class="hero-slide active" data-index="0">
-            <img src="img/hero-banner.jpg" alt="Bengkel Toko Omah Thinner dan Cat" class="hero-slide-img" fetchpriority="high">
+            <img src="img/hero-banner.jpg" alt="Bengkel Toko Omah Thinner dan Cat" class="hero-slide-img" fetchpriority="high" decoding="async">
             <div class="hero-slide-overlay"></div>
             <div class="hero-slide-caption">
               <div class="hero-caption-badge">
@@ -3424,7 +3458,7 @@
 
           <!-- Slide 2: Spray Painting Mobil Profesional -->
           <div class="hero-slide" data-index="1">
-            <img src="img/car-spray-painting.jpg" alt="Pengecatan Mobil Profesional Spray Booth" class="hero-slide-img" loading="lazy">
+            <img src="img/car-spray-painting.jpg" alt="Pengecatan Mobil Profesional Spray Booth" class="hero-slide-img" loading="lazy" decoding="async">
             <div class="hero-slide-overlay"></div>
             <div class="hero-slide-caption">
               <div class="hero-caption-badge">
@@ -3439,7 +3473,7 @@
 
           <!-- Slide 3: Finishing Spray Furniture Mebel Kayu -->
           <div class="hero-slide" data-index="2">
-            <img src="img/furniture-wood-finishing.jpg" alt="Finishing Spray Furniture Kayu Jati Mewah" class="hero-slide-img" loading="lazy">
+            <img src="img/furniture-wood-finishing.jpg" alt="Finishing Spray Furniture Kayu Jati Mewah" class="hero-slide-img" loading="lazy" decoding="async">
             <div class="hero-slide-overlay"></div>
             <div class="hero-slide-caption">
               <div class="hero-caption-badge">
@@ -3454,7 +3488,7 @@
 
           <!-- Slide 4: Hasil Furniture Meja & Mebel Kayu Jati Mewah -->
           <div class="hero-slide" data-index="3">
-            <img src="img/furniture-luxury-teak.jpg" alt="Hasil Meja Makan dan Kabinet Kayu Jati Mewah High Gloss" class="hero-slide-img" loading="lazy">
+            <img src="img/furniture-luxury-teak.jpg" alt="Hasil Meja Makan dan Kabinet Kayu Jati Mewah High Gloss" class="hero-slide-img" loading="lazy" decoding="async">
             <div class="hero-slide-overlay"></div>
             <div class="hero-slide-caption">
               <div class="hero-caption-badge">
@@ -3469,7 +3503,7 @@
 
           <!-- Slide 5: Aplikasi Wood Stain & Sanding Sealer Serat Alami -->
           <div class="hero-slide" data-index="4">
-            <img src="img/wood-stain-application.jpg" alt="Aplikasi Wood Stain dan Sanding Sealer Serat Alami" class="hero-slide-img" loading="lazy">
+            <img src="img/wood-stain-application.jpg" alt="Aplikasi Wood Stain dan Sanding Sealer Serat Alami" class="hero-slide-img" loading="lazy" decoding="async">
             <div class="hero-slide-overlay"></div>
             <div class="hero-slide-caption">
               <div class="hero-caption-badge">
@@ -3484,7 +3518,7 @@
 
           <!-- Slide 6: Presisi Atomisasi HVLP Clear Coat 2K -->
           <div class="hero-slide" data-index="5">
-            <img src="img/spray-gun-wetlook.jpg" alt="Aplikasi Spray Gun HVLP Atomisasi Halus" class="hero-slide-img" loading="lazy">
+            <img src="img/spray-gun-wetlook.jpg" alt="Aplikasi Spray Gun HVLP Atomisasi Halus" class="hero-slide-img" loading="lazy" decoding="async">
             <div class="hero-slide-overlay"></div>
             <div class="hero-slide-caption">
               <div class="hero-caption-badge">
@@ -3499,7 +3533,7 @@
 
           <!-- Slide 7: Laboratorium & Pencampuran Warna Akurat -->
           <div class="hero-slide" data-index="6">
-            <img src="img/paint-mixing-lab.jpg" alt="Pencampuran dan Formula Warna Cat Presisi" class="hero-slide-img" loading="lazy">
+            <img src="img/paint-mixing-lab.jpg" alt="Pencampuran dan Formula Warna Cat Presisi" class="hero-slide-img" loading="lazy" decoding="async">
             <div class="hero-slide-overlay"></div>
             <div class="hero-slide-caption">
               <div class="hero-caption-badge">
@@ -3514,7 +3548,7 @@
 
           <!-- Slide 8: Hasil Kilap Wet-Look Clear Coat -->
           <div class="hero-slide" data-index="7">
-            <img src="img/before-after-wetlook.jpg" alt="Hasil Cat Wet Look Mengkilap" class="hero-slide-img" loading="lazy">
+            <img src="img/before-after-wetlook.jpg" alt="Hasil Cat Wet Look Mengkilap" class="hero-slide-img" loading="lazy" decoding="async">
             <div class="hero-slide-overlay"></div>
             <div class="hero-slide-caption">
               <div class="hero-caption-badge">
@@ -4298,11 +4332,14 @@
     function initScrollSpy() {
       const sections = document.querySelectorAll('section[id]');
       const navLinks = document.querySelectorAll('.nav-links .nav-link');
+      if (!sections.length || !navLinks.length) return;
+
+      let ticking = false;
 
       function updateSpy() {
         let current = '';
-        const scrollY = window.pageYOffset;
-        const isAtBottom = (window.innerHeight + scrollY) >= (document.body.offsetHeight - 60);
+        const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+        const isAtBottom = (window.innerHeight + scrollY) >= (document.documentElement.scrollHeight - 60);
 
         if (isAtBottom) {
           current = 'kontak';
@@ -4318,15 +4355,23 @@
 
         if (current) {
           navLinks.forEach(link => {
-            link.classList.remove('active');
             if (link.getAttribute('href') === `#${current}`) {
               link.classList.add('active');
+            } else {
+              link.classList.remove('active');
             }
           });
         }
+        ticking = false;
       }
 
-      window.addEventListener('scroll', updateSpy, { passive: true });
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          window.requestAnimationFrame(updateSpy);
+          ticking = true;
+        }
+      }, { passive: true });
+
       updateSpy();
     }
 
@@ -4792,17 +4837,17 @@
         slides.forEach((slide, i) => {
           if (i === currentIndex) {
             slide.classList.add('active');
+            slide.setAttribute('aria-hidden', 'false');
           } else {
             slide.classList.remove('active');
+            slide.setAttribute('aria-hidden', 'true');
           }
         });
 
         dots.forEach((dot, i) => {
-          if (i === currentIndex) {
-            dot.classList.add('active');
-          } else {
-            dot.classList.remove('active');
-          }
+          const isActive = (i === currentIndex);
+          dot.classList.toggle('active', isActive);
+          dot.setAttribute('aria-current', isActive ? 'true' : 'false');
         });
 
         if (counter) {
