@@ -936,15 +936,18 @@
     .hero-slide.active .hero-caption-desc {
       animation: heroCaptionFadeUp 0.9s 0.16s cubic-bezier(0.16, 1, 0.3, 1) both;
     }
+    .hero-slide.active .hero-caption-btns {
+      animation: heroCaptionFadeUp 1s 0.24s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
 
     @keyframes heroCaptionFadeUp {
       0% {
         opacity: 0;
-        transform: translateY(18px);
+        transform: translate3d(0, 22px, 0);
       }
       100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translate3d(0, 0, 0);
       }
     }
 
@@ -1058,9 +1061,10 @@
       border-radius: 5px;
       background: rgba(255, 255, 255, 0.3);
       cursor: pointer;
-      transition: all 0.4s ease;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
       position: relative;
       overflow: hidden;
+      will-change: width, background;
     }
 
     .carousel-dot.active {
@@ -1074,6 +1078,26 @@
       font-weight: 700;
       color: #CBD5E1;
       letter-spacing: 0.05em;
+    }
+
+    /* Carousel Realtime Timer Line Bar */
+    .carousel-progress-track {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.12);
+      z-index: 6;
+      overflow: hidden;
+    }
+
+    .carousel-progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #F25A05 0%, #FF994D 65%, #10B981 100%);
+      box-shadow: 0 0 10px rgba(242, 90, 5, 0.85);
+      will-change: width;
     }
 
     /* =========================================================
@@ -1868,7 +1892,12 @@
 
     .cat-pill:hover {
       color: #FFFFFF;
-      border-color: rgba(255, 255, 255, 0.2);
+      border-color: rgba(255, 255, 255, 0.28);
+      transform: translateY(-2px);
+    }
+
+    .cat-pill:active {
+      transform: scale(0.95);
     }
 
     .cat-pill.active {
@@ -1892,14 +1921,16 @@
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
       position: relative;
+      will-change: transform, box-shadow;
+      transform: translateZ(0);
     }
 
     .product-card:hover {
-      transform: translateY(-5px);
-      border-color: var(--border-accent);
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+      transform: translate3d(0, -7px, 0);
+      border-color: rgba(242, 90, 5, 0.55);
+      box-shadow: 0 20px 42px rgba(0, 0, 0, 0.55), 0 0 24px rgba(242, 90, 5, 0.2);
     }
 
     .product-img-wrapper {
@@ -3203,6 +3234,15 @@
     }
 
     /* Floating WhatsApp Quick Action Button */
+    @keyframes floatingWaPulse {
+      0%, 100% {
+        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45), 0 0 0 0 rgba(37, 211, 102, 0.4);
+      }
+      50% {
+        box-shadow: 0 12px 30px rgba(37, 211, 102, 0.65), 0 0 0 10px rgba(37, 211, 102, 0);
+      }
+    }
+
     .floating-wa-btn {
       position: fixed;
       bottom: 24px;
@@ -3218,9 +3258,11 @@
       font-weight: 700;
       font-size: 0.92rem;
       text-decoration: none;
-      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      animation: floatingWaPulse 3s ease-in-out infinite;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       border: 1.5px solid rgba(255, 255, 255, 0.4);
+      will-change: transform, box-shadow;
+      transform: translateZ(0);
     }
 
     .floating-wa-btn i {
@@ -3229,9 +3271,10 @@
 
     .floating-wa-btn:hover {
       background: #20BA5A;
-      transform: translateY(-3px) scale(1.02);
-      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+      transform: translateY(-3px) scale(1.04);
+      box-shadow: 0 14px 35px rgba(37, 211, 102, 0.7);
       color: #FFFFFF;
+      animation-play-state: paused;
     }
 
     @media (max-width: 600px) {
@@ -3298,6 +3341,21 @@
       .floating-wa-btn span {
         display: none;
       }
+    }
+
+    /* ========================================================
+       ELEGANT SCROLL-REVEAL MICRO-ANIMATIONS (GPU ACCELERATED)
+       ======================================================== */
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translate3d(0, 26px, 0);
+      transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+
+    .reveal-on-scroll.revealed {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
     }
 
     /* ========================================================
@@ -3597,6 +3655,11 @@
           <div class="carousel-dot" data-slide="7" title="Slide 8: Kilap Wet-Look"></div>
           <div class="carousel-dot" data-slide="8" title="Slide 9: Thinner Murni"></div>
           <div class="carousel-counter" id="carouselCounter">01 / 09</div>
+        </div>
+
+        <!-- Real-time Progress Countdown Line Bar -->
+        <div class="carousel-progress-track">
+          <div class="carousel-progress-bar" id="carouselProgressBar"></div>
         </div>
       </div>
     </div>
@@ -4255,6 +4318,7 @@
       initMobileMenu();
       initScrollSpy();
       initHeroCarousel();
+      initScrollReveal();
       await loadCatalogData();
     });
 
@@ -4373,6 +4437,38 @@
       }, { passive: true });
 
       updateSpy();
+    }
+
+    function initScrollReveal() {
+      const targets = document.querySelectorAll(
+        '.hero-vcard, .auto-item-card, .auto-visual-card, .wood-visual-card, .wood-spec-card, .about-box, .contact-box, .contact-card, .section-header, .catalog-notice-bar'
+      );
+      if (!targets.length) return;
+
+      if (!('IntersectionObserver' in window)) {
+        targets.forEach(el => el.classList.add('revealed'));
+        return;
+      }
+
+      targets.forEach((el, index) => {
+        el.classList.add('reveal-on-scroll');
+        const delay = (index % 4) * 0.08;
+        el.style.transitionDelay = `${delay}s`;
+      });
+
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -30px 0px'
+      });
+
+      targets.forEach(el => observer.observe(el));
     }
 
     async function loadCatalogData() {
@@ -4822,12 +4918,27 @@
       const prevBtn = document.getElementById('carouselPrevBtn');
       const nextBtn = document.getElementById('carouselNextBtn');
       const counter = document.getElementById('carouselCounter');
+      const progressBar = document.getElementById('carouselProgressBar');
 
       if (!slides.length) return;
 
       let currentIndex = 0;
       let timer = null;
       const intervalDuration = 5500; // 5.5 detik berganti slide otomatis
+
+      function resetProgressBar() {
+        if (!progressBar) return;
+        progressBar.style.transition = 'none';
+        progressBar.style.width = '0%';
+      }
+
+      function startProgressBar() {
+        if (!progressBar) return;
+        resetProgressBar();
+        void progressBar.offsetWidth; // Force DOM reflow
+        progressBar.style.transition = `width ${intervalDuration}ms linear`;
+        progressBar.style.width = '100%';
+      }
 
       function showSlide(index) {
         if (index < 0) index = slides.length - 1;
@@ -4865,7 +4976,11 @@
 
       function startTimer() {
         stopTimer();
-        timer = setInterval(nextSlide, intervalDuration);
+        startProgressBar();
+        timer = setInterval(() => {
+          nextSlide();
+          startProgressBar();
+        }, intervalDuration);
       }
 
       function stopTimer() {
@@ -4873,6 +4988,7 @@
           clearInterval(timer);
           timer = null;
         }
+        resetProgressBar();
       }
 
       if (nextBtn) {
