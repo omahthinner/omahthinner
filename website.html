@@ -830,16 +830,22 @@
       pointer-events: auto;
     }
 
-    /* ANIMASI BERGERAK (KEN BURNS EFFECT CINEMATIC PAN & SLOW ZOOM) */
-    @keyframes kenBurnsLandscape {
+    /* ANIMASI BERGERAK NYATA (KEN BURNS EFFECT CINEMATIC PAN & ZOOM IN / ZOOM OUT JELAS TERLIHAT) */
+    @keyframes kenBurnsZoomIn {
       0% {
-        transform: scale(1) translate3d(0%, 0%, 0);
-      }
-      50% {
-        transform: scale(1.08) translate3d(-1.5%, -1%, 0);
+        transform: scale(1.0) translate3d(0%, 0%, 0);
       }
       100% {
-        transform: scale(1.04) translate3d(1.2%, 0.6%, 0);
+        transform: scale(1.15) translate3d(-2.5%, -1.2%, 0);
+      }
+    }
+
+    @keyframes kenBurnsZoomOut {
+      0% {
+        transform: scale(1.16) translate3d(-2%, -1%, 0);
+      }
+      100% {
+        transform: scale(1.02) translate3d(1.8%, 1%, 0);
       }
     }
 
@@ -853,11 +859,15 @@
       will-change: transform;
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
-      transform: translateZ(0);
+      transform: scale(1.0) translate3d(0, 0, 0);
     }
 
-    .hero-slide.active .hero-slide-img {
-      animation: kenBurnsLandscape 18s ease-in-out infinite alternate;
+    .hero-slide.active:nth-child(odd) .hero-slide-img {
+      animation: kenBurnsZoomIn 6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    }
+
+    .hero-slide.active:nth-child(even) .hero-slide-img {
+      animation: kenBurnsZoomOut 6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
     }
 
     /* Gradients and Overlays */
@@ -1948,11 +1958,12 @@
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
-      transition: transform 0.4s ease;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform;
     }
 
     .product-card:hover .product-img-wrapper img {
-      transform: scale(1.06);
+      transform: scale(1.12);
     }
 
     .badge-category {
@@ -3356,21 +3367,6 @@
     .reveal-on-scroll.revealed {
       opacity: 1;
       transform: translate3d(0, 0, 0);
-    }
-
-    /* ========================================================
-       PERFORMANCE & ACCESSIBILITY OPTIMIZATION (60/120 FPS)
-       ======================================================== */
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-      }
-      .hero-slide.active .hero-slide-img {
-        animation: none !important;
-      }
     }
   </style>
 </head>
@@ -4946,12 +4942,23 @@
         currentIndex = index;
 
         slides.forEach((slide, i) => {
+          const img = slide.querySelector('.hero-slide-img');
           if (i === currentIndex) {
             slide.classList.add('active');
             slide.setAttribute('aria-hidden', 'false');
+            if (img) {
+              // Restart animasi zoom in / zoom out agar setiap pergantian slide gerakannya SELALU hidup & jelas terlihat
+              img.style.animation = 'none';
+              void img.offsetWidth; // Force reflow
+              const animName = (i % 2 === 0) ? 'kenBurnsZoomIn' : 'kenBurnsZoomOut';
+              img.style.animation = `${animName} 6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards`;
+            }
           } else {
             slide.classList.remove('active');
             slide.setAttribute('aria-hidden', 'true');
+            if (img) {
+              img.style.animation = 'none';
+            }
           }
         });
 
@@ -5062,7 +5069,8 @@
         }
       });
 
-      // Jalankan auto timer
+      // Inisialisasi slide pertama agar langsung bergerak & jalankan auto timer
+      showSlide(0);
       startTimer();
     }
 
