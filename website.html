@@ -2777,13 +2777,6 @@
     }
 
     @media (max-width: 768px) {
-      section {
-        padding: 56px 0;
-      }
-      #beranda {
-        padding-top: 76px;
-        padding-bottom: 50px;
-      }
       .container {
         padding: 0 16px;
       }
@@ -2819,55 +2812,31 @@
       .mobile-menu-btn {
         display: inline-flex !important;
       }
-      .section-header {
-        margin-bottom: 34px;
-      }
-      .section-badge {
-        font-size: 0.76rem;
-        padding: 5px 12px;
-        margin-bottom: 12px;
-      }
-      .section-title {
-        font-size: 1.75rem;
-        margin-bottom: 12px;
-      }
-      .section-subtitle {
-        font-size: 0.92rem;
-      }
       .hero-tagline {
-        font-size: 1.85rem;
+        font-size: 2.2rem;
       }
       .hero-fullwidth-wrapper {
-        margin: 0 0 24px 0;
+        margin: 20px 0 36px;
       }
       .hero-landscape-carousel {
-        height: clamp(300px, 42vh, 380px);
-        min-height: 300px;
-        max-height: 380px;
+        height: clamp(420px, 58vh, 520px);
+        min-height: 420px;
         border-radius: 0;
-        border-bottom: 2px solid rgba(242, 90, 5, 0.45);
       }
       .hero-float-chip {
         top: 14px;
         right: 14px;
-        padding: 5px 12px;
+        padding: 6px 12px;
         font-size: 0.75rem;
-        backdrop-filter: blur(12px);
       }
       .hero-slide-caption {
-        bottom: 24px;
+        bottom: 46px;
         left: 16px;
-        right: 80px;
+        right: 16px;
         max-width: none;
-      }
-      .hero-caption-badge {
-        font-size: 0.72rem;
-        padding: 3px 9px;
-        margin-bottom: 6px;
       }
       .hero-caption-title {
         font-size: 1.15rem;
-        margin-bottom: 4px;
       }
       .hero-caption-desc {
         display: -webkit-box;
@@ -2880,7 +2849,7 @@
       }
       .carousel-controls-bar {
         display: flex;
-        bottom: 20px;
+        bottom: 12px;
         right: 14px;
         padding: 5px 12px;
         gap: 6px;
@@ -2898,26 +2867,13 @@
       .carousel-btn {
         display: none;
       }
-      .hero-value-cards {
-        gap: 12px;
-      }
-      .hero-vcard {
-        padding: 14px 16px;
-      }
-      .hero-vcard-icon {
-        width: 40px;
-        height: 40px;
-      }
-      .about-main-img {
-        height: 300px;
-      }
-      .about-float-card {
-        right: 0;
-        bottom: -20px;
-        max-width: 240px;
-        padding: 14px 18px;
+      .hero-value-bar {
+        grid-template-columns: 1fr;
       }
       .legal-badges {
+        grid-template-columns: 1fr;
+      }
+      .product-grid {
         grid-template-columns: 1fr;
       }
       .footer-content {
@@ -2931,7 +2887,7 @@
       }
     }
 
-    /* Floating WhatsApp Quick Action Button */
+    /* Floating WhatsApp Quick Action */
     .floating-wa-btn {
       position: fixed;
       bottom: 24px;
@@ -2963,613 +2919,41 @@
       color: #FFFFFF;
     }
 
-    /* ========================================================
-       SMARTPHONE MOBILE OPTIMIZATIONS (<= 600px)
-       Presisi, Proporsional, Elegan & Bebas Elemen Kebesaran
-       ======================================================== */
     @media (max-width: 600px) {
-      /* General Layout & Section Spacing */
-      section {
-        padding: 42px 0;
-      }
-      #beranda {
-        padding-top: 68px;
-        padding-bottom: 36px;
-      }
-      .container {
-        padding: 0 14px;
-      }
-      .section-header {
-        margin-bottom: 26px;
-      }
-      .section-badge {
-        font-size: 0.7rem;
-        padding: 4px 10px;
-        margin-bottom: 8px;
-        letter-spacing: 0.05em;
-      }
-      .section-title {
-        font-size: 1.48rem;
-        line-height: 1.25;
-        letter-spacing: -0.02em;
-        margin-bottom: 8px;
-      }
-      .section-subtitle {
-        font-size: 0.86rem;
-        line-height: 1.5;
-      }
-
-      /* Navbar & Header Mobile */
       .header-content {
-        height: 64px;
-        padding: 0 12px;
+        height: 68px;
+        padding: 0 14px;
         gap: 8px;
       }
       .mobile-drawer {
-        top: 64px;
-        width: min(300px, 86vw);
+        top: 68px;
+        width: min(320px, 88vw);
       }
       .brand-logo {
-        max-width: calc(100% - 48px);
+        max-width: calc(100% - 54px);
         gap: 8px;
       }
       .brand-logo img {
-        width: 36px;
-        height: 36px;
-        border-radius: 8px;
-      }
-      .brand-text-name {
-        font-size: 0.92rem;
-        letter-spacing: -0.01em;
-      }
-      .brand-text-slogan {
-        font-size: 0.65rem;
-      }
-      .mobile-menu-btn {
         width: 38px;
         height: 38px;
-        font-size: 1.25rem;
       }
-
-      /* ========================================================
-         HERO TOP IMAGE SECTION (REFINED & TIDAK KEBESARAN DI HP)
-         ======================================================== */
-      .hero-fullwidth-wrapper {
-        margin: 0 0 18px 0;
+      .brand-text-name {
+        font-size: 0.96rem;
       }
-      .hero-landscape-carousel {
-        /* Widescreen ratio seimbang: visual tampak utuh, tidak ter-crop berlebih */
-        height: clamp(220px, 34vh, 275px);
-        min-height: 220px;
-        max-height: 275px;
-        border-radius: 0;
-        border-bottom: 2px solid rgba(242, 90, 5, 0.4);
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
-      }
-      .hero-slide-img {
-        object-fit: cover;
-        object-position: center 38%;
-      }
-      .hero-slide-overlay {
-        background: linear-gradient(to top, rgba(9, 13, 22, 0.96) 0%, rgba(9, 13, 22, 0.45) 55%, rgba(9, 13, 22, 0.1) 100%),
-                    linear-gradient(to right, rgba(9, 13, 22, 0.65) 0%, transparent 60%);
-      }
-
-      /* Floating Status Chip Top Right */
-      .hero-float-chip {
-        top: 10px;
-        right: 10px;
-        padding: 4px 10px;
-        font-size: 0.68rem;
-        gap: 6px;
-        border-radius: 999px;
-        background: rgba(16, 23, 38, 0.85);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.14);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-      }
-      .hero-live-indicator {
-        width: 7px;
-        height: 7px;
-      }
-
-      /* Slide Caption Bottom */
-      .hero-slide-caption {
-        bottom: 12px;
-        left: 12px;
-        right: 74px; /* Ruang rapi untuk counter pill di kanan bawah */
-        max-width: none;
-      }
-      .hero-caption-badge {
-        font-size: 0.64rem;
-        padding: 2px 7px;
-        gap: 5px;
-        margin-bottom: 4px;
-        border-radius: 6px;
-      }
-      .hero-caption-title {
-        font-size: 0.92rem;
-        font-weight: 800;
-        line-height: 1.22;
-        margin-bottom: 3px;
-        letter-spacing: -0.01em;
-        text-shadow: 0 1px 6px rgba(0, 0, 0, 0.85);
-      }
-      .hero-caption-desc {
-        font-size: 0.72rem;
-        line-height: 1.35;
-        color: #CBD5E1;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
-      }
-      /* Sembunyikan tombol duplikat di dalam foto agar visual leluasa bernafas di HP */
-      .hero-caption-btns {
-        display: none !important;
-      }
-
-      /* Carousel Controls Bar di HP: Hanya Counter Glassmorphism Bersih */
-      .carousel-controls-bar {
-        bottom: 10px;
-        right: 10px;
-        padding: 3px 9px;
-        gap: 0;
-        border-radius: 999px;
-        background: rgba(16, 23, 38, 0.82);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.16);
-        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
-      }
-      .carousel-dot {
-        display: none !important; /* 9 dot disembunyikan di HP agar tidak semrawut */
-      }
-      .carousel-counter {
-        font-size: 0.68rem;
-        font-weight: 700;
-        letter-spacing: 0.04em;
-        color: #FFFFFF;
-      }
-
-      /* ========================================================
-         HERO HEADLINE & INTRO KONTEN
-         ======================================================== */
-      .hero-tagline {
-        font-size: 1.48rem;
-        line-height: 1.22;
-        letter-spacing: -0.025em;
-        margin-bottom: 12px;
-      }
-      .hero-title-lead {
-        font-size: 1.48rem;
-      }
-      .hero-title-accent {
-        font-size: 1.48rem;
-      }
-      .hero-desc {
-        font-size: 0.86rem;
-        line-height: 1.6;
-        margin-bottom: 16px;
-      }
-      .hero-desc p {
-        text-align: left !important;
-        text-justify: auto !important;
-        margin-bottom: 10px;
-      }
-      .hero-trust-chips {
-        gap: 6px;
-        margin-bottom: 18px;
-      }
-      .trust-chip {
-        font-size: 0.72rem;
-        padding: 5px 10px;
-        border-radius: 8px;
-      }
-
-      /* Hero Action Buttons Symmetrical Grid di HP */
-      .hero-buttons {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
-        margin-bottom: 22px;
-      }
-      .hero-buttons .btn-primary {
-        grid-column: 1 / -1;
-        justify-content: center;
-        padding: 12px 18px;
-        font-size: 0.92rem;
-        border-radius: 12px;
-      }
-      .hero-buttons .btn-wa {
-        justify-content: center;
-        padding: 10px 10px;
-        font-size: 0.82rem;
-        border-radius: 10px;
-      }
-      .hero-buttons .btn-outline {
-        justify-content: center;
-        padding: 10px 10px;
-        font-size: 0.82rem;
-        border-radius: 10px;
-      }
-
-      /* Value Cards Minimalis Ringkas */
-      .hero-value-cards {
-        gap: 8px;
-      }
-      .hero-vcard {
-        padding: 10px 12px;
-        gap: 10px;
-        border-radius: 12px;
-      }
-      .hero-vcard-icon {
-        width: 36px;
-        height: 36px;
-        font-size: 1.1rem;
-        border-radius: 10px;
-        flex-shrink: 0;
-      }
-      .hero-vcard-text strong {
-        font-size: 0.86rem;
-      }
-      .hero-vcard-text span {
-        font-size: 0.74rem;
-        line-height: 1.35;
-      }
-
-      /* ========================================================
-         SHOWCASE SECTION (FURNITURE & CAT OTOMOTIF)
-         ======================================================== */
-      .wood-furniture-showcase,
-      .auto-paint-showcase {
-        margin-top: 32px;
-        padding: 18px 14px;
-        border-radius: 18px;
-      }
-      .wood-showcase-title,
-      .auto-showcase-title {
-        font-size: 1.32rem;
-        line-height: 1.25;
-        margin-bottom: 8px;
-      }
-      .wood-showcase-desc,
-      .auto-showcase-desc {
-        font-size: 0.82rem;
-        line-height: 1.55;
-        text-align: left !important;
-        text-justify: auto !important;
-      }
-      .wood-visual-img,
-      .auto-visual-img {
-        min-height: 175px;
-        max-height: 215px;
-        border-radius: 14px;
-      }
-      .wood-item-card,
-      .auto-item-card {
-        padding: 14px 12px;
-        border-radius: 12px;
-      }
-      .wood-item-title,
-      .auto-item-title {
-        font-size: 0.92rem;
-      }
-      .wood-item-desc,
-      .auto-item-desc {
-        font-size: 0.78rem;
-        line-height: 1.45;
-        text-align: left !important;
-      }
-      .wood-showcase-actions,
-      .auto-showcase-actions {
-        margin-top: 18px;
-        gap: 8px;
-      }
-      .wood-showcase-actions .btn,
-      .auto-showcase-actions .btn {
-        width: 100%;
-        justify-content: center;
-        padding: 10px 14px;
-        font-size: 0.84rem;
-      }
-      .wood-gallery-strip,
-      .auto-gallery-strip {
-        margin-top: 24px;
-        gap: 14px;
-      }
-      .wood-gallery-card,
-      .auto-gallery-card {
-        border-radius: 14px;
-      }
-      .wood-gallery-img-wrap,
-      .auto-gallery-img-wrap {
-        height: 160px;
-      }
-      .wood-gallery-body,
-      .auto-gallery-body {
-        padding: 12px 14px 14px;
-      }
-      .wood-gallery-title,
-      .auto-gallery-title {
-        font-size: 0.92rem;
-      }
-      .wood-gallery-desc,
-      .auto-gallery-desc {
-        font-size: 0.76rem;
-        line-height: 1.45;
-        text-align: left !important;
-      }
-
-      /* ========================================================
-         ETALASE PRODUK (MODERN 2-KOLOM DI SMARTPHONE)
-         ======================================================== */
-      .catalog-controls {
-        margin-bottom: 24px;
-        gap: 14px;
-      }
-      .search-input {
-        padding: 11px 36px 11px 40px;
-        font-size: 0.88rem;
-        border-radius: 10px;
-      }
-      .search-icon {
-        left: 14px;
-        font-size: 1.05rem;
-      }
-      .category-pills {
-        gap: 6px;
-        justify-content: flex-start;
-        overflow-x: auto;
-        padding-bottom: 6px;
-        flex-wrap: nowrap;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-      }
-      .category-pills::-webkit-scrollbar {
-        display: none;
-      }
-      .cat-pill {
-        padding: 6px 14px;
-        font-size: 0.78rem;
-        white-space: nowrap;
-        flex-shrink: 0;
-        border-radius: 18px;
-      }
-
-      /* 2 Kolom Grid Produk Rapi & Presisi di HP */
-      .product-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 10px !important;
-      }
-      .product-card {
-        border-radius: 12px;
-      }
-      .product-img-wrapper {
-        height: 125px;
-        padding: 6px;
-      }
-      .badge-category {
-        top: 6px;
-        left: 6px;
-        font-size: 0.62rem;
-        padding: 2px 6px;
-        border-radius: 4px;
-      }
-      .badge-brand {
-        top: 6px;
-        right: 6px;
-        font-size: 0.62rem;
-        padding: 2px 6px;
-        border-radius: 4px;
-      }
-      .product-info {
-        padding: 10px 10px 12px;
-      }
-      .product-title {
-        font-size: 0.84rem;
-        font-weight: 700;
-        line-height: 1.3;
-        margin-bottom: 4px;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        min-height: 2.55em;
-      }
-      .product-variants-summary {
-        font-size: 0.7rem;
-        margin-bottom: 8px;
-      }
-      .product-price-row {
-        padding-top: 8px;
-      }
-      .price-label {
+      .brand-text-slogan {
         font-size: 0.68rem;
       }
-      .price-value {
-        font-size: 0.92rem;
-        font-weight: 800;
-      }
-      .card-actions {
-        margin-top: 10px;
-        grid-template-columns: 1fr;
-        gap: 5px;
-      }
-      .btn-detail {
-        padding: 6px 8px;
-        font-size: 0.74rem;
-        border-radius: 6px;
-      }
-      .btn-order-wa {
-        padding: 6px 8px;
-        font-size: 0.74rem;
-        border-radius: 6px;
-        justify-content: center;
-      }
-
-      /* Pagination Box di HP */
-      .catalog-pagination-box {
-        padding: 18px 14px;
-        border-radius: 16px;
-      }
-      .catalog-summary-pill {
-        padding: 6px 14px;
-        font-size: 0.78rem;
-      }
-      .catalog-btn-group {
-        flex-direction: column;
-        width: 100%;
-        gap: 8px;
-      }
-      .btn-catalog-all,
-      .btn-catalog-step,
-      .btn-catalog-collapse {
-        width: 100%;
-        justify-content: center;
-        padding: 10px 16px;
-        font-size: 0.84rem;
-      }
-
-      /* ========================================================
-         TENTANG KAMI & KONTAK
-         ======================================================== */
-      .about-main-img {
-        height: 210px;
-        border-radius: 14px;
-      }
-      .about-float-card {
-        position: static;
-        margin: -24px 10px 0 10px;
-        max-width: none;
-        padding: 12px 14px;
-        border-radius: 12px;
-      }
-      .about-float-card h5 {
-        font-size: 0.88rem;
-      }
-      .about-float-card p {
-        font-size: 0.76rem;
-      }
-      .about-text-col h3 {
-        font-size: 1.38rem;
-        margin-bottom: 12px;
-      }
-      .about-text-col p {
-        font-size: 0.85rem;
-        line-height: 1.6;
-        text-align: left !important;
-        margin-bottom: 14px;
-      }
-      .legal-card {
-        padding: 12px 14px;
-        border-radius: 12px;
-      }
-      .legal-card h4 {
-        font-size: 0.9rem;
-      }
-      .legal-card p {
-        font-size: 0.78rem;
-      }
-
-      /* Kontak Section */
-      .contact-card {
-        padding: 12px 14px;
-        gap: 12px;
-        border-radius: 12px;
-      }
-      .contact-card-icon {
-        width: 40px;
-        height: 40px;
-        font-size: 1.2rem;
-        border-radius: 10px;
-      }
-      .contact-card-content h4 {
-        font-size: 0.92rem;
-      }
-      .contact-card-content p {
-        font-size: 0.82rem;
-      }
-      .social-links-grid {
-        gap: 6px;
-      }
-      .social-btn {
-        padding: 7px 11px;
-        font-size: 0.76rem;
-        border-radius: 8px;
-      }
-      .contact-form-box {
-        padding: 20px 14px;
-        border-radius: 16px;
-      }
-      .contact-form-box h3 {
-        font-size: 1.2rem;
-      }
-      .contact-form-box p {
-        font-size: 0.82rem;
-        margin-bottom: 16px;
-      }
-      .form-input, .form-textarea {
-        padding: 10px 12px;
-        font-size: 0.88rem;
-      }
-
-      /* Modal Detail Produk di HP */
-      .modal-box {
-        padding: 20px 14px 22px;
-        border-radius: 16px;
-        max-height: 88vh;
-      }
-      .modal-close {
-        top: 12px;
-        right: 12px;
-        width: 32px;
-        height: 32px;
-        font-size: 1.15rem;
-      }
-      .variant-table {
-        font-size: 0.78rem;
-      }
-      .variant-table th,
-      .variant-table td {
-        padding: 8px 6px;
-      }
-
-      /* Floating WhatsApp Button di HP */
       .floating-wa-btn {
-        bottom: 16px;
-        right: 16px;
+        bottom: 18px;
+        right: 18px;
         padding: 12px;
         border-radius: 50%;
-        width: 48px;
-        height: 48px;
+        width: 50px;
+        height: 50px;
         justify-content: center;
-        box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
       }
       .floating-wa-btn span {
-        display: none !important;
-      }
-    }
-
-    /* Extra Small Screen (Di bawah 380px) */
-    @media (max-width: 380px) {
-      .hero-landscape-carousel {
-        height: 210px;
-        min-height: 210px;
-      }
-      .hero-tagline {
-        font-size: 1.35rem;
-      }
-      .product-grid {
-        grid-template-columns: 1fr !important;
-      }
-      .product-img-wrapper {
-        height: 150px;
+        display: none;
       }
     }
   </style>
