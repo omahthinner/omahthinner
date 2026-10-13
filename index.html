@@ -93,6 +93,7 @@
     html {
       scroll-behavior: smooth;
       scroll-padding-top: 96px;
+      font-size: 18px; /* Tampilan tulisan diperbesar secara presisi & proporsional untuk seluruh web */
     }
 
     * {
@@ -2792,6 +2793,9 @@
        Tampilan Maksimal, Megah & 100% Bebas Teks/Gambar Terpotong
        ======================================================== */
     @media (max-width: 768px) {
+      html {
+        font-size: 16px; /* Menjaga ukuran di HP tetap presisi & rapi sesuai optimasi sebelumnya */
+      }
       html, body {
         overflow-x: hidden;
         max-width: 100vw;
