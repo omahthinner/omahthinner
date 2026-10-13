@@ -2878,7 +2878,8 @@
       }
       .hero-float-chip {
         top: 10px;
-        right: 12px;
+        left: 12px;
+        right: auto;
         padding: 4px 10px;
         font-size: 0.65rem;
         font-weight: 700;
@@ -2891,7 +2892,7 @@
       }
       .hero-slide-caption {
         position: absolute;
-        bottom: 38px;
+        bottom: 14px;
         left: 12px;
         right: 12px;
         z-index: 4;
@@ -2954,29 +2955,30 @@
         font-weight: 600;
         border-radius: 7px;
       }
+      /* Kontrol Slide / Keterangan 1-9 Di HP: Dibuat sangat minimalis di pojok kanan atas, tidak menutupi tulisan maupun foto */
       .carousel-controls-bar {
         display: flex;
         position: absolute;
-        bottom: 12px;
-        right: 14px;
-        padding: 4px 12px;
-        gap: 6px;
+        top: 10px;
+        right: 12px;
+        bottom: auto;
+        padding: 3px 8px;
+        gap: 0;
         border-radius: 999px;
-        background: rgba(16, 23, 38, 0.82);
-        backdrop-filter: blur(12px);
+        background: rgba(9, 13, 22, 0.75);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
         border: 1px solid rgba(255, 255, 255, 0.15);
         z-index: 5;
       }
       .carousel-dot {
-        width: 7px;
-        height: 7px;
-      }
-      .carousel-dot.active {
-        width: 20px;
+        display: none !important;
       }
       .carousel-counter {
-        font-size: 0.72rem;
+        font-size: 0.65rem;
         font-weight: 700;
+        color: #E2E8F0;
+        letter-spacing: 0.05em;
       }
       .carousel-btn {
         display: none;
@@ -3228,7 +3230,7 @@
         max-height: 400px;
       }
       .hero-slide-caption {
-        bottom: 34px;
+        bottom: 12px;
         left: 10px;
         right: 10px;
         padding: 0 !important;
