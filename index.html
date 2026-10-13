@@ -156,11 +156,13 @@
       background: linear-gradient(135deg, #F25A05 0%, #D84E00 100%);
       color: #FFFFFF;
       box-shadow: 0 4px 20px var(--primary-glow);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, box-shadow;
     }
     .btn-primary:hover {
       background: linear-gradient(135deg, #FF6A1A 0%, #F25A05 100%);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(242, 90, 5, 0.45);
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 10px 28px rgba(242, 90, 5, 0.52), 0 0 18px rgba(242, 90, 5, 0.28);
     }
 
     .btn-outline {
@@ -647,13 +649,27 @@
       letter-spacing: -0.025em;
     }
 
+    @keyframes luxuryGoldShimmer {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
     .hero-title-accent {
       display: inline-block;
-      background: linear-gradient(135deg, #FFB066 0%, #F25A05 52%, #FF7A1A 100%);
+      background: linear-gradient(135deg, #FF9433 0%, #FFA84A 25%, #FFF0D4 50%, #FFA84A 75%, #F25A05 100%);
+      background-size: 250% auto;
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      filter: drop-shadow(0 4px 22px rgba(242, 90, 5, 0.4));
+      animation: luxuryGoldShimmer 8s ease infinite;
+      filter: drop-shadow(0 4px 22px rgba(242, 90, 5, 0.45));
       letter-spacing: -0.02em;
     }
 
@@ -817,7 +833,7 @@
       height: 100%;
       opacity: 0;
       visibility: hidden;
-      transition: opacity 0.85s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.85s;
+      transition: opacity 1.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 1.1s cubic-bezier(0.4, 0, 0.2, 1);
       z-index: 1;
       will-change: opacity;
       pointer-events: none;
@@ -830,22 +846,40 @@
       pointer-events: auto;
     }
 
-    /* ANIMASI BERGERAK NYATA (KEN BURNS EFFECT CINEMATIC PAN & ZOOM IN / ZOOM OUT JELAS TERLIHAT) */
-    @keyframes kenBurnsZoomIn {
+    /* ANIMASI BERGERAK SINEMATIK MEWAH (4 CAM-PATHS KEN BURNS PAN & ZOOM) */
+    @keyframes kenBurnsZoomInLeft {
       0% {
         transform: scale(1.0) translate3d(0%, 0%, 0);
       }
       100% {
-        transform: scale(1.15) translate3d(-2.5%, -1.2%, 0);
+        transform: scale(1.16) translate3d(-2.8%, -1.2%, 0);
       }
     }
 
-    @keyframes kenBurnsZoomOut {
+    @keyframes kenBurnsZoomOutRight {
       0% {
-        transform: scale(1.16) translate3d(-2%, -1%, 0);
+        transform: scale(1.18) translate3d(-2.5%, -1%, 0);
       }
       100% {
-        transform: scale(1.02) translate3d(1.8%, 1%, 0);
+        transform: scale(1.02) translate3d(2%, 0.8%, 0);
+      }
+    }
+
+    @keyframes kenBurnsZoomInCenter {
+      0% {
+        transform: scale(1.02) translate3d(1%, 0.8%, 0);
+      }
+      100% {
+        transform: scale(1.17) translate3d(-1%, -2%, 0);
+      }
+    }
+
+    @keyframes kenBurnsZoomOutTilt {
+      0% {
+        transform: scale(1.18) translate3d(0%, -2.2%, 0);
+      }
+      100% {
+        transform: scale(1.03) translate3d(0%, 1.2%, 0);
       }
     }
 
@@ -862,12 +896,20 @@
       transform: scale(1.0) translate3d(0, 0, 0);
     }
 
-    .hero-slide.active:nth-child(odd) .hero-slide-img {
-      animation: kenBurnsZoomIn 6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    .hero-slide.active:nth-child(4n+1) .hero-slide-img {
+      animation: kenBurnsZoomInLeft 6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
     }
 
-    .hero-slide.active:nth-child(even) .hero-slide-img {
-      animation: kenBurnsZoomOut 6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    .hero-slide.active:nth-child(4n+2) .hero-slide-img {
+      animation: kenBurnsZoomOutRight 6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    }
+
+    .hero-slide.active:nth-child(4n+3) .hero-slide-img {
+      animation: kenBurnsZoomInCenter 6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    }
+
+    .hero-slide.active:nth-child(4n+4) .hero-slide-img {
+      animation: kenBurnsZoomOutTilt 6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
     }
 
     /* Gradients and Overlays */
@@ -1069,18 +1111,24 @@
       width: 10px;
       height: 10px;
       border-radius: 5px;
-      background: rgba(255, 255, 255, 0.3);
+      background: rgba(255, 255, 255, 0.35);
       cursor: pointer;
-      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: width 0.45s cubic-bezier(0.16, 1, 0.3, 1), background 0.3s ease, box-shadow 0.3s ease, transform 0.25s ease;
       position: relative;
       overflow: hidden;
-      will-change: width, background;
+      will-change: width, background, transform;
+    }
+
+    .carousel-dot:hover {
+      background: rgba(255, 255, 255, 0.7);
+      transform: scale(1.2);
     }
 
     .carousel-dot.active {
-      width: 36px;
+      width: 38px;
       background: linear-gradient(90deg, #FF7A1A, var(--primary));
-      box-shadow: 0 0 14px rgba(242, 90, 5, 0.65);
+      box-shadow: 0 0 16px rgba(242, 90, 5, 0.85);
+      transform: none;
     }
 
     .carousel-counter {
@@ -1099,15 +1147,28 @@
       height: 4px;
       background: rgba(255, 255, 255, 0.12);
       z-index: 6;
-      overflow: hidden;
+      overflow: visible;
     }
 
     .carousel-progress-bar {
       height: 100%;
       width: 0%;
-      background: linear-gradient(90deg, #F25A05 0%, #FF994D 65%, #10B981 100%);
-      box-shadow: 0 0 10px rgba(242, 90, 5, 0.85);
+      background: linear-gradient(90deg, #F25A05 0%, #FF994D 70%, #FFFFFF 100%);
+      box-shadow: 0 0 14px rgba(242, 90, 5, 0.9), 0 0 6px #FFFFFF;
+      position: relative;
       will-change: width;
+    }
+
+    .carousel-progress-bar::after {
+      content: '';
+      position: absolute;
+      right: -2px;
+      top: -3px;
+      bottom: -3px;
+      width: 8px;
+      background: #FFFFFF;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #FFFFFF, 0 0 18px #F25A05;
     }
 
     /* =========================================================
@@ -1155,10 +1216,12 @@
     }
 
     .wood-showcase-title span {
-      background: linear-gradient(135deg, #FF994D 0%, #F25A05 100%);
+      background: linear-gradient(135deg, #FF9433 0%, #FFA84A 25%, #FFF0D4 50%, #FFA84A 75%, #F25A05 100%);
+      background-size: 250% auto;
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
+      animation: luxuryGoldShimmer 8s ease infinite;
     }
 
     .wood-showcase-desc {
@@ -1187,9 +1250,27 @@
       transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
     }
 
+    .wood-visual-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -130%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.16), transparent);
+      transform: skewX(-25deg);
+      transition: left 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+      z-index: 3;
+    }
+
+    .wood-visual-card:hover::after {
+      left: 200%;
+    }
+
     .wood-visual-card:hover {
       border-color: rgba(242, 90, 5, 0.5);
-      transform: translateY(-4px);
+      transform: translateY(-5px);
       box-shadow: 0 25px 60px rgba(0, 0, 0, 0.65), 0 0 35px rgba(242, 90, 5, 0.22);
     }
 
@@ -1204,7 +1285,7 @@
     }
 
     .wood-visual-card:hover .wood-visual-img {
-      transform: scale(1.06);
+      transform: scale(1.09);
     }
 
     .wood-visual-overlay {
@@ -1361,6 +1442,24 @@
       flex-direction: column;
     }
 
+    .wood-gallery-card::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -130%;
+      width: 80%;
+      height: 200%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.16), transparent);
+      transform: rotate(25deg);
+      transition: left 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+      z-index: 3;
+    }
+
+    .wood-gallery-card:hover::after {
+      left: 200%;
+    }
+
     .wood-gallery-card:hover {
       border-color: rgba(242, 90, 5, 0.5);
       transform: translateY(-5px);
@@ -1510,11 +1609,27 @@
       margin-bottom: 12px;
     }
 
+    @keyframes luxuryCyanShimmer {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
     .auto-showcase-title span {
-      background: linear-gradient(135deg, #38BDF8 0%, #0284C7 60%, #F25A05 100%);
+      display: inline-block;
+      background: linear-gradient(135deg, #38BDF8 0%, #7DD3FC 25%, #E0F2FE 50%, #38BDF8 75%, #0284C7 100%);
+      background-size: 250% auto;
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
+      animation: luxuryCyanShimmer 8s ease infinite;
+      filter: drop-shadow(0 4px 20px rgba(56, 189, 248, 0.45));
     }
 
     .auto-showcase-desc {
@@ -1541,6 +1656,24 @@
       box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
       background: #0A0E17;
       transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .auto-visual-card::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -130%;
+      width: 80%;
+      height: 200%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.18), transparent);
+      transform: rotate(25deg);
+      transition: left 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+      z-index: 3;
+    }
+
+    .auto-visual-card:hover::after {
+      left: 200%;
     }
 
     .auto-visual-card:hover {
@@ -2667,9 +2800,9 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(0, 0, 0, 0.75);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
+      background: rgba(4, 7, 15, 0.82);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
       z-index: 200;
       display: flex;
       align-items: center;
@@ -2677,7 +2810,7 @@
       padding: 20px;
       opacity: 0;
       pointer-events: none;
-      transition: opacity 0.28s ease;
+      transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     .modal-backdrop.open {
@@ -2688,16 +2821,16 @@
     .modal-box {
       background: var(--bg-card);
       border: 1px solid var(--border-accent);
-      border-radius: 20px;
+      border-radius: 22px;
       max-width: 650px;
       width: 100%;
       max-height: 90vh;
       overflow-y: auto;
-      padding: 32px;
+      padding: 34px;
       position: relative;
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
-      transform: scale(0.94) translate3d(0, 16px, 0);
-      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.28s ease;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.75), 0 0 40px rgba(242, 90, 5, 0.15);
+      transform: scale(0.92) translate3d(0, 24px, 0);
+      transition: transform 0.42s cubic-bezier(0.34, 1.25, 0.64, 1), opacity 0.32s ease;
       will-change: transform, opacity;
     }
 
@@ -2713,13 +2846,22 @@
       border: 1px solid var(--border-subtle);
       color: #FFFFFF;
       font-size: 1.25rem;
-      width: 36px;
-      height: 36px;
+      width: 38px;
+      height: 38px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
+      transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .modal-close:hover {
+      background: rgba(242, 90, 5, 0.2);
+      border-color: var(--primary);
+      color: #FFFFFF;
+      transform: rotate(90deg) scale(1.1);
+      box-shadow: 0 0 16px rgba(242, 90, 5, 0.5);
     }
 
     .variant-table {
@@ -4947,11 +5089,12 @@
             slide.classList.add('active');
             slide.setAttribute('aria-hidden', 'false');
             if (img) {
-              // Restart animasi zoom in / zoom out agar setiap pergantian slide gerakannya SELALU hidup & jelas terlihat
+              // Restart animasi kamera drone agar setiap pergantian slide gerakannya SELALU hidup & anggun sinematik
               img.style.animation = 'none';
               void img.offsetWidth; // Force reflow
-              const animName = (i % 2 === 0) ? 'kenBurnsZoomIn' : 'kenBurnsZoomOut';
-              img.style.animation = `${animName} 6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards`;
+              const animPaths = ['kenBurnsZoomInLeft', 'kenBurnsZoomOutRight', 'kenBurnsZoomInCenter', 'kenBurnsZoomOutTilt'];
+              const animName = animPaths[i % animPaths.length];
+              img.style.animation = `${animName} 6s cubic-bezier(0.25, 1, 0.5, 1) forwards`;
             }
           } else {
             slide.classList.remove('active');
