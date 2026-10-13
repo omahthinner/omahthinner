@@ -2871,71 +2871,84 @@
       .hero-slide-overlay {
         position: absolute;
         inset: 0;
-        background: linear-gradient(to top, rgba(9, 13, 22, 0.98) 0%, rgba(9, 13, 22, 0.75) 50%, rgba(9, 13, 22, 0.2) 80%, rgba(9, 13, 22, 0.05) 100%);
+        /* Subtle, focused gradient: 65% area atas gambar bersih dan jernih, gelap lembut di area teks bawah */
+        background: linear-gradient(180deg, rgba(9, 13, 22, 0.15) 0%, rgba(9, 13, 22, 0) 35%, rgba(9, 13, 22, 0.45) 65%, rgba(9, 13, 22, 0.92) 100%);
         z-index: 2;
         pointer-events: none;
       }
       .hero-float-chip {
-        top: 12px;
-        right: 14px;
-        padding: 5px 12px;
-        font-size: 0.72rem;
+        top: 10px;
+        right: 12px;
+        padding: 4px 10px;
+        font-size: 0.65rem;
+        font-weight: 700;
         border-radius: 999px;
-        background: rgba(16, 23, 38, 0.85);
+        background: rgba(16, 23, 38, 0.88);
         backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
         z-index: 4;
       }
       .hero-slide-caption {
         position: absolute;
-        bottom: 44px;
-        left: 14px;
-        right: 14px;
+        bottom: 38px;
+        left: 12px;
+        right: 12px;
         z-index: 4;
         max-width: none;
+        background: rgba(9, 13, 22, 0.55);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 12px;
+        padding: 10px 12px 10px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
       }
       .hero-caption-badge {
-        font-size: 0.7rem;
-        padding: 3px 9px;
-        margin-bottom: 5px;
-        border-radius: 6px;
+        font-size: 0.62rem;
+        font-weight: 700;
+        padding: 2px 7px;
+        margin-bottom: 3px;
+        border-radius: 5px;
         display: inline-flex;
         align-items: center;
-        gap: 6px;
+        gap: 4px;
+        letter-spacing: 0.02em;
       }
       .hero-caption-title {
-        font-size: 1.1rem;
+        font-size: 0.88rem;
         font-weight: 800;
-        line-height: 1.25;
-        margin-bottom: 4px;
+        line-height: 1.22;
+        margin-bottom: 3px;
         color: #FFFFFF;
-        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
         word-break: break-word;
       }
-      /* Teks Deskripsi Banner: Tampil UTUH, Tidak Ada Yang Terpotong */
+      /* Teks Deskripsi Banner: Kompak, Presisi, Elegan & Tidak Menutupi Foto */
       .hero-caption-desc {
-        display: block !important;
-        overflow: visible !important;
-        -webkit-line-clamp: none !important;
-        line-clamp: none !important;
-        font-size: 0.8rem;
-        line-height: 1.48;
-        color: #E2E8F0;
-        text-shadow: 0 1px 6px rgba(0, 0, 0, 0.9);
-        text-align: justify;
-        text-justify: inter-word;
-        -webkit-hyphens: auto;
-        hyphens: auto;
+        display: -webkit-box !important;
+        -webkit-line-clamp: 2 !important;
+        line-clamp: 2 !important;
+        -webkit-box-orient: vertical !important;
+        overflow: hidden !important;
+        font-size: 0.72rem;
+        line-height: 1.35;
+        color: rgba(241, 245, 249, 0.92);
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
+        text-align: left;
+        margin-bottom: 0;
         word-break: normal;
       }
       .hero-caption-btns {
         display: flex;
-        gap: 10px;
-        margin-top: 8px;
+        gap: 8px;
+        margin-top: 6px;
       }
       .hero-caption-btns .btn-sm {
-        padding: 7px 14px;
-        font-size: 0.8rem;
-        border-radius: 8px;
+        padding: 4px 10px;
+        font-size: 0.72rem;
+        font-weight: 600;
+        border-radius: 7px;
       }
       .carousel-controls-bar {
         display: flex;
@@ -3025,6 +3038,68 @@
       .wood-gallery-img-wrap,
       .auto-gallery-img-wrap {
         height: 185px;
+      }
+
+      /* Keterangan & Badge Pada Gambar Showcase Kayu & Otomotif Di HP:
+         Dibuat ramping, presisi, teks diperkecil, dan tidak menutupi keindahan gambar */
+      .wood-floating-badge,
+      .auto-floating-badge {
+        font-size: 0.65rem !important;
+        padding: 4px 10px !important;
+        border-radius: 8px !important;
+        top: 10px !important;
+        left: 10px !important;
+        gap: 5px !important;
+      }
+      .wood-floating-badge i,
+      .auto-floating-badge i {
+        font-size: 0.8rem !important;
+      }
+      .wood-visual-caption,
+      .auto-visual-caption {
+        bottom: 10px !important;
+        left: 10px !important;
+        right: 10px !important;
+        padding: 8px 12px !important;
+        background: rgba(9, 13, 22, 0.68) !important;
+        backdrop-filter: blur(8px) !important;
+        -webkit-backdrop-filter: blur(8px) !important;
+        border: 1px solid rgba(255, 255, 255, 0.12) !important;
+        border-radius: 10px !important;
+        font-size: 0.68rem !important;
+        line-height: 1.35 !important;
+        color: #E2E8F0 !important;
+        text-align: left !important;
+      }
+      .wood-visual-caption strong,
+      .auto-visual-caption strong {
+        font-size: 0.78rem !important;
+        margin-bottom: 2px !important;
+        color: #FFFFFF !important;
+      }
+      .wood-visual-caption span,
+      .auto-visual-caption span {
+        display: -webkit-box !important;
+        -webkit-line-clamp: 2 !important;
+        line-clamp: 2 !important;
+        -webkit-box-orient: vertical !important;
+        overflow: hidden !important;
+      }
+
+      /* Gallery Card Body Di HP */
+      .wood-gallery-body,
+      .auto-gallery-body {
+        padding: 12px 14px 14px !important;
+      }
+      .wood-gallery-title,
+      .auto-gallery-title {
+        font-size: 0.95rem !important;
+        margin-bottom: 4px !important;
+      }
+      .wood-gallery-desc,
+      .auto-gallery-desc {
+        font-size: 0.76rem !important;
+        line-height: 1.4 !important;
       }
 
       /* Section Tentang Kami: Mengatasi Floating Card Terpotong */
@@ -3132,21 +3207,23 @@
         text-overflow: clip;
       }
       .hero-landscape-carousel {
-        height: clamp(350px, 50vh, 420px);
-        min-height: 350px;
-        max-height: 420px;
+        height: clamp(340px, 48vh, 400px);
+        min-height: 340px;
+        max-height: 400px;
       }
       .hero-slide-caption {
-        bottom: 42px;
-        left: 12px;
-        right: 12px;
+        bottom: 36px;
+        left: 10px;
+        right: 10px;
+        padding: 8px 10px 8px;
       }
       .hero-caption-title {
-        font-size: 1.02rem;
+        font-size: 0.84rem;
+        line-height: 1.2;
       }
       .hero-caption-desc {
-        font-size: 0.78rem;
-        line-height: 1.45;
+        font-size: 0.70rem;
+        line-height: 1.32;
       }
       .floating-wa-btn {
         bottom: 18px;
